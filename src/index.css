@@ -2,6 +2,41 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme{
-    --color-background : #ffffff;
+:root {
+  --bg: #F8FAF8;
+  --bg-section: #F3F4F6;
+  --surface: #FFFFFF;
+  --text: #111827;
+  --text-muted: #475569;
+  --border: #E5E7EB;
+  --primary: #4F46E5;
+  --primary-hover: #4338CA;
+  --accent-soft: #EEF2FF;
+  --accent-text: #4338CA;
+}
+
+.dark {
+  --bg: #111827;
+  --bg-section: #0B1220;
+  --surface: #1F2937;
+  --text: #F9FAFB;
+  --text-muted: #9CA3AF;
+  --border: #374151;
+  --primary: #4F46E5;
+  --primary-hover: #4338CA;
+  --accent-soft: #312E81;
+  --accent-text: #C7D2FE;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-section: var(--bg-section);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-text: var(--accent-text);
 }

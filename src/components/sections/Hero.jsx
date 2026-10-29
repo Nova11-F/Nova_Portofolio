@@ -4,8 +4,8 @@ export default function Hero() {
   const { t } = useLanguage()
 
   return (
-    <section className="mx-auto max-w-5xl px-6 py-24">
-      <p className="text-indigo-600 dark:text-indigo-400">{t('hero.greeting')}</p>
+    <section className="mx-auto max-w-5xl px-6 py-24 md:mx-0 md:max-w-full bg-bg">
+      <p className="text-accent dark:text-indigo-400">{t('hero.greeting')}</p>
       <h1 className="mt-2 text-5xl font-bold tracking-tight">Nama Anda</h1>
       <h2 className="mt-2 text-2xl text-neutral-600 dark:text-neutral-400">{t('hero.role')}</h2>
       <p className="mt-6 max-w-xl text-neutral-600 dark:text-neutral-400">{t('hero.description')}</p>

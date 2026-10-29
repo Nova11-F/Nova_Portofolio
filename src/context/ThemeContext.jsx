@@ -3,7 +3,6 @@ import { createContext, useContext, useEffect, useState } from 'react'
 const ThemeContext = createContext()
 
 export function ThemeProvider({ children }) {
-  // Ambil tema tersimpan; kalau tidak ada, ikuti pengaturan sistem
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem('theme')
     if (saved) return saved
@@ -12,7 +11,6 @@ export function ThemeProvider({ children }) {
       : 'light'
   })
 
-  // Setiap kali tema berubah: update class <html> dan simpan
   useEffect(() => {
     document.documentElement.classList.toggle('dark', theme === 'dark')
     localStorage.setItem('theme', theme)
