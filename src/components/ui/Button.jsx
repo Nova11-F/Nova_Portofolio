@@ -1,4 +1,5 @@
 export default function Button({
+  children,
   variant = "default",
   size = "md",
   className = "",
@@ -14,11 +15,12 @@ export default function Button({
     lg: "px-10 py-4",
   };
 
-return(
-        <button
-          className={`rounded-xl font-bold text-lg cursor-pointer transition duration-300 ${variants[variant]} ${sizes[size]} ${className}`}
-          {...props}
-        >
-        </button>
-);
+  return (
+    <button
+      className={`rounded-xl font-bold text-lg cursor-pointer transition duration-300 ${variants[variant]} ${sizes[size]} ${className}`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
 }
