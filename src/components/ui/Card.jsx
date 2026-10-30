@@ -1,6 +1,8 @@
 export default function Card({
+  children,
   variant = "default",
-  size = "md",
+  padding = "md",
+  rounded = "md",
   className = "",
   ...props
 }) {
@@ -8,11 +10,24 @@ export default function Card({
     default: "bg-accent-soft text-text",
   };
 
-  const sizes = {
-    sm: "px-4 py-2",
-    md: "px-8 py-3",
-    lg: "px-10 py-4",
+  const paddings = {
+    sm: "p-2",
+    md: "p-4",
+    lg: "p-8",
   };
 
-  return <div></div>;
+  const roundeds ={
+    sm : "rounded-md",
+    md : "rounded-lg",
+    lg : "rounded-xl"
+  };
+
+  return (
+    <div
+      className={`cursor-pointer transition-all duration-300 ${variants[variant]} ${paddings[padding]} ${roundeds[rounded]} ${className}`}
+      {...props}
+    >
+      {children}
+    </div>
+  );
 }

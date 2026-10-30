@@ -1,4 +1,5 @@
 import { useLanguage } from '../../context/LanguageContext'
+import Card from '../ui/Card'
 
 export default function Hero() {
   const { t } = useLanguage()
@@ -18,6 +19,7 @@ export default function Hero() {
       >
         {t('hero.downloadCv')}
       </a>
+      <Card>sashd</Card>
     </section>
   )
 }
