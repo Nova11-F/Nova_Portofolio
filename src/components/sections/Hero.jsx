@@ -7,7 +7,7 @@ export default function Hero() {
 
   return (
     <>
-    <section className="mx-auto max-w-5xl px-6 md:max-w-full bg-bg">
+    <section className="relative mx-auto max-w-5xl px-6 md:max-w-full bg-bg">
       <p className="text-accent dark:text-indigo-400">{t('hero.greeting')}</p>
       <h1 className="mt-2 text-5xl font-bold tracking-tight">Nama Anda</h1>
       <h2 className="mt-2 text-2xl text-neutral-600 dark:text-neutral-400">{t('hero.role')}</h2>
