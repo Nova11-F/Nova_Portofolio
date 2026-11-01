@@ -23,12 +23,12 @@ export default function Navbar() {
 
   return (
     <>
-    <header className={`fixed top-0 left-0 w-full z-50 
-        transition-all duration-300
+    <header className={`sticky top-0 left-0 w-full z-50 
+        transition-all duration-150
         ${
           scrolled
-            ? "bg-white/80 backdrop-blur-md shadow-md"
-            : "bg-transparent"
+            ? "bg-white shadow-md"
+            : "bg-bg"
         }`}>
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 md:mx-10 md:max-w-full">
         <div className="flex items-center justify-center gap-2 md:gap-4">

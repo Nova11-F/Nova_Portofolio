@@ -1,3 +1,4 @@
+import TechStack from '../layout/TechStack'
 import { useLanguage } from '../../context/LanguageContext'
 import Card from '../ui/Card'
 
@@ -5,6 +6,7 @@ export default function Hero() {
   const { t } = useLanguage()
 
   return (
+    <>
     <section className="mx-auto max-w-5xl px-6 md:max-w-full bg-bg">
       <p className="text-accent dark:text-indigo-400">{t('hero.greeting')}</p>
       <h1 className="mt-2 text-5xl font-bold tracking-tight">Nama Anda</h1>
@@ -21,5 +23,7 @@ export default function Hero() {
       </a>
       <Card>sashd</Card>
     </section>
+    <TechStack />
+    </>
   )
 }
