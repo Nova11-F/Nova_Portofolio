@@ -25,8 +25,8 @@ export default function Hero() {
       <Card className="bg-secondary text-text-muted">sashd</Card>
       <Card className="bg-tertiary">sashd</Card>
       <Card className="bg-surface border-4 border-border text-text">sashd</Card>
-      <h1 className="text-text font-medium">Saya adalah mahasiswa tingkat tiga di Universitas Indonesia yang menolak kompromi antara kecepatan performa komputasi dan keindahan antarmuka. Sepanjang masa studi, saya mendedikasikan waktu untuk mendalami arsitektur perangkat lunak skalabel seraya mengeksplorasi estetika neobrutalisme dan minimalisme editorial.</h1>
-      <h1 className="text-muted bg-surface">Saya adalah mahasiswa tingkat tiga di Universitas Indonesia yang menolak kompromi antara kecepatan performa komputasi dan keindahan antarmuka. Sepanjang masa studi, saya mendedikasikan waktu untuk mendalami arsitektur perangkat lunak skalabel seraya mengeksplorasi estetika neobrutalisme dan minimalisme editorial.</h1>
+      <h1 className="text-text font-bold font-Grotesk text-4xl">Saya adalah mahasiswa tingkat tiga di Universitas Indonesia yang menolak kompromi antara kecepatan performa komputasi dan keindahan antarmuka. Sepanjang masa studi, saya mendedikasikan waktu untuk mendalami arsitektur perangkat lunak skalabel seraya mengeksplorasi estetika neobrutalisme dan minimalisme editorial.</h1>
+      <h1 className="text-muted bg-surface font-mono text-2xl">Saya adalah mahasiswa tingkat tiga di Universitas Indonesia yang menolak kompromi antara kecepatan performa komputasi dan keindahan antarmuka. Sepanjang masa studi, saya mendedikasikan waktu untuk mendalami arsitektur perangkat lunak skalabel seraya mengeksplorasi estetika neobrutalisme dan minimalisme editorial.</h1>
     </section>
     <TechStack />
     </>
