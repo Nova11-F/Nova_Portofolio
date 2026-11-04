@@ -5,6 +5,10 @@
 @theme {
   --font-Grotesk: "Space Grotesk", sans-serif;
   --font-Mono: "Space Mono", monospace;
+
+  --shadow-brutal-sm: 3px 3px 0px 0px #000000;
+  --shadow-brutal-md: 5px 5px 0px 0px #000000;
+  --shadow-brutal-lg: 8px 8px 0px 0px #000000;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
