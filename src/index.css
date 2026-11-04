@@ -3,27 +3,29 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --bg: #F8FAF8;
-  --bg-section: #F3F4F6;
+  --bg: #F1F5F9;
+  --bg-section: #E0E3E5;
   --surface: #FFFFFF;
   --text: #111827;
-  --text-muted: #475569;
-  --border: #E5E7EB;
-  --primary: #4F46E5;
-  --primary-hover: #4338CA;
+  --text-muted: #444749;
+  --border: #111111;
+  --primary: #0f172a;
+  --secondary: #7c3aed;
+  --tertiary: #06b6d4;
   --accent-soft: #EEF2FF;
   --accent-text: #4338CA;
 }
 
 .dark {
-  --bg: #111827;
-  --bg-section: #0B1220;
-  --surface: #1F2937;
-  --text: #F9FAFB;
-  --text-muted: #9CA3AF;
-  --border: #374151;
-  --primary: #4F46E5;
-  --primary-hover: #4338CA;
+  --bg: #0A0F1D;
+  --bg-section: #0f172a;
+  --surface: #161B2A;
+  --text: #FFFFFF;
+  --text-muted: #C2C6DA;
+  --border: #424657;
+  --primary: #8B5CF6;
+  --secondary: #06B6D4;
+  --tertiary: #22D3EE;
   --accent-soft: #312E81;
   --accent-text: #C7D2FE;
 }
@@ -34,9 +36,10 @@
   --color-surface: var(--surface);
   --color-border: var(--border);
   --color-text: var(--text);
-  --color-muted: var(--muted);
+  --color-muted: var(--text-muted);
   --color-primary: var(--primary);
-  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
   --color-accent-soft: var(--accent-soft);
   --color-accent-text: var(--accent-text);
 }
