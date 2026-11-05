@@ -31,7 +31,7 @@ export default function ThemeToggle() {
               ${isActive ? "" : "text-text"}
             `}
           >
-            {themeOption === "dark" ? <FiMoon className="size-4" strokeWidth={3} /> : <FiSun className="size-4" strokeWidth={3} />}
+            {themeOption === "dark" ? <FiMoon className="size-4 md:size-5" strokeWidth={3} /> : <FiSun className="size-4 md:size-5" strokeWidth={3} />}
           </button>
         );
       })}
