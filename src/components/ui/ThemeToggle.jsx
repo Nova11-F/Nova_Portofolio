@@ -5,9 +5,6 @@ import { useTheme } from "../../context/ThemeContext";
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
 
-  const themeIcon =
-    theme === "dark" ? <FiSun size={18} /> : <FiMoon size={18} />;
-
   return (
     <Card padding="xs" className="relative flex items-center">
       <div
