@@ -8,7 +8,7 @@ export default function LanguageToggle() {
 
   return (
     <Card padding="xs" className="relative flex items-center">
- <div
+    <div
         className={`
           absolute left-1 top-1 bottom-1 w-[calc(50%-4px)] bg-secondary border-2 border-border transition-transform duration-300 ease-in-out
           ${lang === 'en' ? 'translate-x-full' : 'translate-x-0'}

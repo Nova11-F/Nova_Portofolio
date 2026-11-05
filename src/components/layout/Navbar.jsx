@@ -43,7 +43,7 @@ export default function Navbar() {
           <li><a href="#contact" className="hover:text-neutral-900">{t('nav.contact')}</a></li>
         </ul>
 
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-2 md:gap-4">
           <LanguageToggle />
           <ThemeToggle />
           <Button>Hire me</Button>
