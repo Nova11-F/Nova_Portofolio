@@ -2,22 +2,30 @@ export default function Button({
   children,
   variant = "default",
   size = "md",
+  shadow = "default",
   className = "",
   ...props
 }) {
   const variants = {
-    default: "bg-accent-soft text-text",
+    default: "bg-secondary text-white",
   };
 
   const sizes = {
     sm: "px-4 py-2",
-    md: "px-8 py-3",
-    lg: "px-10 py-4",
+    md: "px-6 py-3",
+    lg: "px-8 py-4",
+  };
+
+  const shadowVariants = {
+    none: "shadow-none",
+    default: "shadow-brutal-md",
+    soft: "shadow-brutal-sm",
+    hard: "shadow-brutal-lg",
   };
 
   return (
     <button
-      className={`rounded-xl font-bold text-lg cursor-pointer transition duration-300 ${variants[variant]} ${sizes[size]} ${className}`}
+      className={`border-3 border-border font-Mono font-bold text-lg cursor-pointer transition duration-300 ${variants[variant]} ${sizes[size]} ${shadowVariants[shadow]} ${className}`}
       {...props}
     >
       {children}
