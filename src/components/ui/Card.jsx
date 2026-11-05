@@ -2,7 +2,7 @@ export default function Card({
   children,
   variant = "default",
   padding = "md",
-  rounded = "md",
+  shadow = "default",
   className = "",
   ...props
 }) {
@@ -11,20 +11,22 @@ export default function Card({
   };
 
   const paddings = {
+    xs: "p-1",
     sm: "p-2",
     md: "p-4",
     lg: "p-8",
   };
 
-  const roundeds ={
-    sm : "rounded-md",
-    md : "rounded-lg",
-    lg : "rounded-xl"
+  const shadowVariants = {
+    none: "shadow-none",
+    default: "shadow-brutal-md",
+    soft: "shadow-brutal-sm",
+    hard: "shadow-brutal-lg",
   };
 
   return (
     <div
-      className={`cursor-pointer transition-all duration-300 ${variants[variant]} ${paddings[padding]} ${roundeds[rounded]} ${className}`}
+      className={`border-3 border-border cursor-pointer transition-all duration-300 ${variants[variant]} ${paddings[padding]} ${shadowVariants[shadow]} ${className}`}
       {...props}
     >
       {children}

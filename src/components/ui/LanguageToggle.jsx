@@ -1,10 +1,13 @@
+import Card from './Card'
 import { useLanguage } from '../../context/LanguageContext'
 
 export default function LanguageToggle() {
   const { toggleLang } = useLanguage()
 
   return (
-    <div className="flex items-center border-3 border-border bg-surface p-0.5 shadow-brutal-md">
+    <Card 
+    padding="xs"
+    className="flex items-center bg-surface">
       <button
         onClick={toggleLang}
         aria-label="Change language"
@@ -19,6 +22,6 @@ export default function LanguageToggle() {
     >
       EN
     </button>
-    </div>
+    </Card>
   )
 }
