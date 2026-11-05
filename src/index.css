@@ -11,6 +11,10 @@
   --shadow-brutal-lg: 8px 8px 0px 0px #000000;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
@@ -82,4 +86,3 @@
 .marquee-reverse {
   animation: marquee-reverse 25s linear infinite;
 }
-

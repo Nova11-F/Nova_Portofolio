@@ -3,6 +3,7 @@ const id = {
     about: 'Tentang',
     skills: 'Keahlian',
     projects: 'Proyek',
+    experience: 'Pengalaman',
     contact: 'Kontak',
   },
   hero: {

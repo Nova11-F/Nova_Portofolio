@@ -3,6 +3,7 @@ const en = {
     about: 'About',
     skills: 'Skills',
     projects: 'Projects',
+    experience: 'Experience',
     contact: 'Contact',
   },
   hero: {
