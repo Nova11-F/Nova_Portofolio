@@ -7,7 +7,7 @@ export default function Card({
   ...props
 }) {
   const variants = {
-    default: "bg-accent-soft text-text",
+    default: "bg-surface",
   };
 
   const paddings = {
