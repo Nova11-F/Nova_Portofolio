@@ -4,6 +4,7 @@ import LanguageToggle from '../ui/LanguageToggle'
 import { CodeXml } from 'lucide-react'
 import Button from '../ui/Button'
 import Card from '../ui/Card'
+import AnnouncementBar from './AnnouncementBar'
 import { useState, useEffect } from 'react'
 
 const navItems = [
@@ -64,6 +65,7 @@ export default function Navbar() {
   }, [])
 
   return (
+    <>
     <header
       className={`
         sticky top-0 left-0 w-full z-50
@@ -153,5 +155,7 @@ export default function Navbar() {
 
       </nav>
     </header>
+  <AnnouncementBar/>
+  </>
   )
 }

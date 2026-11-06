@@ -6,6 +6,12 @@ const id = {
     experience: 'Pengalaman',
     contact: 'Kontak',
   },
+  announcementBar: {
+    title: 'Status Kampus :',
+    message: 'semester 5 - Program Studi Teknik Informatika',
+    status: 'tersedia untuk magang 2026',
+    location: 'Jakarta, Indonesia',
+  },
   hero: {
     greeting: 'Halo, saya',
     role: 'Pengembang Frontend',

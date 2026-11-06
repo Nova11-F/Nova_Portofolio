@@ -6,6 +6,12 @@ const en = {
     experience: 'Experience',
     contact: 'Contact',
   },
+  announcementBar: {
+    title: 'Campus Status :',
+    message: 'Semester 5 - Informatics Engineering Study Program',
+    status: 'Available for internship 2026',
+    location: 'Jakarta, Indonesia',
+  },
   hero: {
     greeting: "Hi, I'm",
     role: 'Frontend Developer',

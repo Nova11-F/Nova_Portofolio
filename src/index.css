@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 @import "tailwindcss";
 
@@ -11,7 +11,7 @@
   --shadow-brutal-lg: 8px 8px 0px 0px #000000;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -22,31 +22,33 @@ section {
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --bg: #F1F5F9;
-  --bg-section: #E0E3E5;
-  --surface: #FFFFFF;
+  --bg: #f1f5f9;
+  --bg-section: #e0e3e5;
+  --surface: #ffffff;
   --text: #111827;
   --text-muted: #444749;
+  --text-list: #ffffff;
   --border: #111111;
   --primary: #0f172a;
   --secondary: #7c3aed;
   --tertiary: #06b6d4;
-  --accent-soft: #EEF2FF;
-  --accent-text: #4338CA;
+  --accent-soft: #eef2ff;
+  --accent-text: #4338ca;
 }
 
 .dark {
-  --bg: #0A0F1D;
+  --bg: #0a0f1d;
   --bg-section: #0f172a;
-  --surface: #161B2A;
-  --text: #FFFFFF;
-  --text-muted: #C2C6DA;
+  --surface: #161b2a;
+  --text: #ffffff;
+  --text-muted: #c2c6da;
+  --text-list: #e0e3e5;
   --border: #424657;
-  --primary: #8B5CF6;
-  --secondary: #06B6D4;
-  --tertiary: #22D3EE;
-  --accent-soft: #312E81;
-  --accent-text: #C7D2FE;
+  --primary: #8b5cf6;
+  --secondary: #06b6d4;
+  --tertiary: #22d3ee;
+  --accent-soft: #312e81;
+  --accent-text: #c7d2fe;
 }
 
 @theme inline {
@@ -56,6 +58,7 @@ section {
   --color-border: var(--border);
   --color-text: var(--text);
   --color-muted: var(--text-muted);
+  --color-text-list: var(--text-list);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-tertiary: var(--tertiary);
