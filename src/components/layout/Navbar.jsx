@@ -4,13 +4,12 @@ import LanguageToggle from '../ui/LanguageToggle'
 import { CodeXml } from 'lucide-react'
 import Button from '../ui/Button'
 import Card from '../ui/Card'
-import AnnouncementBar from './AnnouncementBar'
 import { useState, useEffect } from 'react'
 
 const navItems = [
   { id: 'about', label: 'about' },
-  { id: 'projects', label: 'projects' },
   { id: 'skills', label: 'skills' },
+  { id: 'projects', label: 'projects' },
   { id: 'experience', label: 'experience' },
   { id: 'contact', label: 'contact' },
 ]
