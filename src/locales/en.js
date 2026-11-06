@@ -36,6 +36,10 @@ const en = {
     title: "About Me",
     text: "I'm a graduate of ... passionate about web development.",
   },
+  skill: {
+    title:"Stack Skill & Mastery Level",
+    text:"Self-evaluation metrics based on accumulated experience in production project implementation, academic research, and periodic testing.",
+  }
 };
 
 export default en;

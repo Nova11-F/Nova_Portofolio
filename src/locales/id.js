@@ -37,6 +37,10 @@ const id = {
     title: "Tentang Saya",
     text: "Saya lulusan ... yang bersemangat di bidang web development.",
   },
+  skill: {
+    title:"Tingkat Kemahiran & Penguasaan Stack",
+    text:"Metrik evaluasi mandiri berdasarkan jam terbang implementasi proyek produksi, riset kampus, dan pengujian berkala.",
+  },
 };
 
 export default id;
