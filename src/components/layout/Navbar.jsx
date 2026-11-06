@@ -8,8 +8,8 @@ import { useState, useEffect } from 'react'
 
 const navItems = [
   { id: 'about', label: 'about' },
-  { id: 'skills', label: 'skills' },
   { id: 'projects', label: 'projects' },
+  { id: 'skills', label: 'skills' },
   { id: 'experience', label: 'experience' },
   { id: 'contact', label: 'contact' },
 ]
