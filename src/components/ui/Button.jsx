@@ -26,7 +26,7 @@ export default function Button({
 
   return (
     <button
-      className={`border-3 border-border font-Mono font-bold text-lg cursor-pointer transition duration-300 ${variants[variant]} ${sizes[size]} ${shadowVariants[shadow]} ${className}`}
+      className={`border-3 border-border font-Mono font-bold text-lg cursor-pointer hover:translate-[2px] hover:shadow-brutal-none  transition duration-300 ${variants[variant]} ${sizes[size]} ${shadowVariants[shadow]} ${className}`}
       {...props}
     >
       {children}
