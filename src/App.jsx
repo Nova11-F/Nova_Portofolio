@@ -6,16 +6,21 @@ import Skills from './components/sections/Skills'
 import Projects from './components/sections/Projects'
 import Experience from './components/sections/Experience'
 import Contact from './components/sections/Contact'
+import TechStack from './components/layout/TechStack'
+import AnnouncementBar from './components/layout/AnnouncementBar'
 
 export default function App() {
   return (
     <>
       <Navbar />
+      <AnnouncementBar/>
       <main>
         <Hero />
+        <TechStack />
         <About />
-        <Skills />
         <Projects />
+        <TechStack />
+        <Skills />
         <Experience />
         <Contact />
       </main>

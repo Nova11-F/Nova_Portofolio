@@ -1,24 +1,30 @@
 import techStack from "../../data/techStack";
+import Card from "../ui/Card";
 
 function Ribbon({ className = "", reverse = false }) {
   return (
-    <div
+    <Card
+      shadow="soft"
+      variant="secondary"
       className={`absolute left-[-10%] w-[120%] min-h-20 md:min-h-28 flex items-center overflow-hidden ${className}`}
     >
       <div
-        className={`flex w-max ${reverse ? "marquee-reverse" : "marquee"}`}
+        className={`flex w-max items-center gap-5 ${reverse ? "marquee-reverse" : "marquee"}`}
       >
-        <div className="flex w-screen shrink-0 items-center justify-around gap-5 px-5 md:gap-10 md:px-10">
+        <div className="flex w-screen shrink-0 items-center justify-around gap-5">
           {techStack.map((tech) => {
             const Icon = tech.icon;
 
             return (
-              <div key={tech.name} className="flex shrink-0 items-center gap-2">
+              <div
+                key={tech.name}
+                className="flex shrink-0 items-center gap-2 md:gap-4"
+              >
                 <Icon
-                  className="text-xl md:text-4xl"
+                  className="size-5 md:size-7"
                   style={{ color: tech.color }}
                 />
-                <span className="text-sm md:text-lg font-semibold">
+                <span className="text-sm md:text-xl font-Mono font-semibold">
                   {tech.name}
                 </span>
               </div>
@@ -26,17 +32,20 @@ function Ribbon({ className = "", reverse = false }) {
           })}
         </div>
 
-        <div className="flex w-screen shrink-0 items-center justify-around gap-5 px-5 md:gap-10 md:px-10">
+        <div className="flex w-screen shrink-0 items-center justify-around gap-5">
           {techStack.map((tech) => {
             const Icon = tech.icon;
 
             return (
-              <div key={tech.name} className="flex shrink-0 items-center gap-2">
+              <div
+                key={tech.name}
+                className="flex shrink-0 items-center gap-2 md:gap-4"
+              >
                 <Icon
-                  className="text-xl md:text-4xl"
+                  className="size-5 md:size-7"
                   style={{ color: tech.color }}
                 />
-                <span className="text-sm md:text-lg font-semibold">
+                <span className="text-sm md:text-xl font-Mono font-semibold">
                   {tech.name}
                 </span>
               </div>
@@ -44,14 +53,19 @@ function Ribbon({ className = "", reverse = false }) {
           })}
         </div>
       </div>
-    </div>
+    </Card>
   );
 }
 
 export default function TechStack() {
   return (
-    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-full overflow-hidden">
-      <Ribbon className="bottom-24 bg-section text-text border-6 border-border" />
+    <div className="relative w-full h-18 md:h-28 overflow-hidden pointer-events-none">
+      <Ribbon
+        className="
+          top-1/2 -translate-y-1/2
+          border-6 border-border
+        "
+      />
     </div>
   );
 }

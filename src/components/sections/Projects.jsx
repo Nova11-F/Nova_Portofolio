@@ -1,12 +1,10 @@
 import Card from '../ui/Card'
-import TechStack from '../layout/TechStack'
 import { useLanguage } from '../../context/LanguageContext'
 
 export default function Project() {
 const { t } = useLanguage()
 
   return (
-    <>
     <section 
     id="projects"
     className="relative mx-auto max-w-5xl px-6 md:max-w-full bg-bg">
@@ -30,7 +28,5 @@ const { t } = useLanguage()
       <h1 className="text-text font-bold font-Grotesk text-4xl">Saya adalah mahasiswa tingkat tiga di Universitas Indonesia yang menolak kompromi antara kecepatan performa komputasi dan keindahan antarmuka. Sepanjang masa studi, saya mendedikasikan waktu untuk mendalami arsitektur perangkat lunak skalabel seraya mengeksplorasi estetika neobrutalisme dan minimalisme editorial.</h1>
       <h1 className="text-muted bg-surface font-mono text-2xl">Saya adalah mahasiswa tingkat tiga di Universitas Indonesia yang menolak kompromi antara kecepatan performa komputasi dan keindahan antarmuka. Sepanjang masa studi, saya mendedikasikan waktu untuk mendalami arsitektur perangkat lunak skalabel seraya mengeksplorasi estetika neobrutalisme dan minimalisme editorial.</h1>
     </section>
-    <TechStack />
-    </>
   );
 }

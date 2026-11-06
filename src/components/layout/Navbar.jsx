@@ -65,7 +65,6 @@ export default function Navbar() {
   }, [])
 
   return (
-    <>
     <header
       className={`
         sticky top-0 left-0 w-full z-50
@@ -155,7 +154,5 @@ export default function Navbar() {
 
       </nav>
     </header>
-  <AnnouncementBar/>
-  </>
   )
 }

@@ -8,6 +8,9 @@ export default function Card({
 }) {
   const variants = {
     default: "bg-surface",
+    primary: "bg-primary",
+    secondary: "bg-secondary text-white",
+    tertiary: "bg-tertiary",
   };
 
   const paddings = {
