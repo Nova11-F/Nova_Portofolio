@@ -20,17 +20,17 @@ export default function Skill() {
           {t("skill.text")}
         </p>
       </div>
-      <div className="grid grid-cols-4 grid-rows-2 gap-4">
+      <div className="grid grid-cols-4 grid-rows-2 gap-4 md:gap-6">
         {techStack.map((tech) => {
           const Icon = tech.icon;
 
           return (
             <Card
               key={tech.name}
-              className="flex flex-col justify-center items-center p-4 gap-2 md:p-8 hover:border-secondary hover:translate-[2px] hover:shadow-brutal-none transition-all duration-150"
+              className="flex flex-col justify-center items-center p-4 gap-2 md:gap-6 md:px-10 md:py-12 hover:border-secondary hover:translate-[2px] hover:shadow-brutal-none transition-all duration-150"
             >
               <Icon
-                className="size-7 md:size-12 mb-2"
+                className="size-7 md:size-15 mb-2"
                 style={{ color: tech.color }}
               />
               <p className="text-md font-bold font-Mono text-text text-center md:text-xl">
@@ -39,10 +39,18 @@ export default function Skill() {
               <p className="text-sm font-medium font-Grotesk text-muted text-center uppercase md:text-lg">
                 {tech.desc}
               </p>
-              <div className="bg-secondary rounded-4xl w-full border-3 border-border shadow-brutal-sm py-1.5">
-                <p className="text-md font-bold font-Mono text-white text-center">
+              <div className="relative rounded-4xl w-full h-9 border-3 border-border shadow-brutal-sm overflow-hidden">
+              <div
+                className="h-full rounded-full"
+                style={{
+                  width: tech.progres,
+                  backgroundColor: tech.color,
+                }}
+              >
+                <p className="absolute inset-0 flex items-center justify-center text-md font-bold font-mono text-white">
                   {tech.progres}
                 </p>
+              </div>
               </div>
             </Card>
           );

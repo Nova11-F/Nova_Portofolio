@@ -5,8 +5,8 @@ function Ribbon({ className = "", reverse = false }) {
   return (
     <Card
       shadow="soft"
-      variant="secondary"
-      className={`absolute left-[-10%] w-[120%] min-h-20 md:min-h-28 flex items-center overflow-hidden ${className}`}
+      variant="accent"
+      className={`absolute left-[-10%] w-[120%]  h-20 md:h-28 flex items-center overflow-hidden ${className}`}
     >
       <div
         className={`flex w-max items-center gap-5 ${reverse ? "marquee-reverse" : "marquee"}`}
@@ -21,7 +21,7 @@ function Ribbon({ className = "", reverse = false }) {
                 className="flex shrink-0 items-center gap-2 md:gap-4"
               >
                 <Icon
-                  className="size-5 md:size-7"
+                  className="size-5 md:size-8"
                   style={{ color: tech.color }}
                 />
                 <span className="text-sm md:text-xl font-Mono font-semibold">
@@ -59,7 +59,7 @@ function Ribbon({ className = "", reverse = false }) {
 
 export default function TechStack() {
   return (
-    <div className="relative w-full h-18 md:h-28 overflow-hidden pointer-events-none">
+    <div className="relative w-full h-20 md:h-28 overflow-hidden pointer-events-none">
       <Ribbon
         className="
           top-1/2 -translate-y-1/2

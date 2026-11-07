@@ -11,6 +11,7 @@ export default function Card({
     primary: "bg-primary",
     secondary: "bg-secondary text-white",
     tertiary: "bg-tertiary",
+    accent: "bg-accent-soft text-white"
   };
 
   const paddings = {
