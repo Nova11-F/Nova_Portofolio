@@ -34,12 +34,19 @@ const id = {
     downloadCv: "Unduh CV",
   },
   about: {
-    title: "Tentang Saya",
-    text: "Saya lulusan ... yang bersemangat di bidang web development.",
+    list: "Mahasiswa teknik Informatika",
+    title_profile:
+      "Bukan sekadar membangun aplikasi, tetapi menciptakan solusi yang bermakna.",
+    desc_profile:
+      "Saya adalah mahasiswa semester lima Teknik Informatika Universitas Negeri Surabaya dengan ketertarikan pada pengembangan aplikasi web dan perancangan sistem. Memiliki pengalaman di bidang infrastruktur jaringan melalui program internship, serta terus mengembangkan kemampuan dalam frontend, backend, dan pengelolaan database untuk membangun solusi digital yang fungsional dan bermanfaat.",
+    ability_title: "SPESIALISASI",
+    education_title: "pendidikan",
+    ability_desc: "Software Engineering",
+    education_desc: "S1 Teknik Informatika",
   },
   skill: {
-    title:"Tingkat Kemahiran & Penguasaan Stack",
-    text:"Metrik evaluasi mandiri berdasarkan jam terbang implementasi proyek produksi, riset kampus, dan pengujian berkala.",
+    title: "Tingkat Kemahiran & Penguasaan Stack",
+    text: "Metrik evaluasi mandiri berdasarkan jam terbang implementasi proyek produksi, riset kampus, dan pengujian berkala.",
   },
 };
 

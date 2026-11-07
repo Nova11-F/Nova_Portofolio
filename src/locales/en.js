@@ -33,8 +33,13 @@ const en = {
     downloadCv: "Download CV",
   },
   about: {
-    title: "About Me",
-    text: "I'm a graduate of ... passionate about web development.",
+    list: "INFORMATICS ENGINEERING STUDENT",
+    title_profile: "Not just building applications, but creating meaningful solutions.",
+    desc_profile: "I am a fifth-semester Informatics Engineering student at Universitas Negeri Surabaya, passionate about web development and system design. With professional internship experience in network infrastructure, I continue to develop my skills in frontend, backend, and database management to build functional and meaningful digital solutions.",
+    ability_title:"SPECIALIZATION",
+    education_title:"education",
+    ability_desc:"Software Engineering",
+    education_desc:"Bachelor's Degree in Informatics Engineering", 
   },
   skill: {
     title:"Stack Skill & Mastery Level",
