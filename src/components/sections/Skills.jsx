@@ -26,19 +26,24 @@ export default function Skill() {
 
           return (
             <Card
-            padding="lg"
-            key={tech.name}
-            className="flex flex-col justify-center items-center gap-2 hover:border-secondary hover:translate-[2px] hover:shadow-brutal-none transition-all duration-150">
+              key={tech.name}
+              className="flex flex-col justify-center items-center p-4 gap-2 md:p-8 hover:border-secondary hover:translate-[2px] hover:shadow-brutal-none transition-all duration-150"
+            >
               <Icon
                 className="size-7 md:size-12 mb-2"
                 style={{ color: tech.color }}
               />
               <p className="text-md font-bold font-Mono text-text text-center md:text-xl">
                 {tech.name}
-                </p>
+              </p>
               <p className="text-sm font-medium font-Grotesk text-muted text-center uppercase md:text-lg">
                 {tech.desc}
               </p>
+              <div className="bg-secondary rounded-4xl w-full border-3 border-border shadow-brutal-sm py-1.5">
+                <p className="text-md font-bold font-Mono text-white text-center">
+                  {tech.progres}
+                </p>
+              </div>
             </Card>
           );
         })}
