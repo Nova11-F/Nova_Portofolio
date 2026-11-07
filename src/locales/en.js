@@ -40,6 +40,10 @@ const en = {
     education_title:"education",
     ability_desc:"Software Engineering",
     education_desc:"Bachelor's Degree in Informatics Engineering", 
+    title_dev: "Development Focus",
+    desc_dev: "Focused on web application development, system design, database management, and implementing frontend and backend features that address real user needs.",
+    title_profexpe: "Professional Experience",
+    title_orgaexpe: "Organizational Experience",
   },
   skill: {
     title:"Stack Skill & Mastery Level",

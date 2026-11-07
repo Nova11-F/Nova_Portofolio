@@ -1,6 +1,11 @@
 import Card from "../ui/Card";
 import SectionHeader from "../ui/SectionHeader";
 import { useLanguage } from "../../context/LanguageContext";
+import {
+  Code2,
+  BriefcaseBusiness,
+  Users,
+} from "lucide-react";
 
 export default function About() {
   const { t } = useLanguage();
@@ -14,7 +19,7 @@ export default function About() {
       number="01" 
       section="about"
       label="about" />
-      <div className="flex flex-col items-center justify-between mt-8 gap-4 md:flex-row">
+      <div className="grid grid-cols-1 items-start mt-8 gap-4 md:grid-cols-2">
         <Card 
         className="flex flex-col justify-start gap-4 p-4 md:p-8">
           <Card
@@ -49,10 +54,35 @@ export default function About() {
           </div>
         </Card>
         <div className="flex flex-col items-center justify-center gap-4">
-          <Card></Card>
-          <div className="flex items-center justify-center gap-4">
-          <Card></Card>
-          <Card></Card>
+          <Card className="flex flex-col gap-2 p-4 md:p-8">
+            <div className="flex items-center justify-start gap-4">
+            <Code2 className="size-5 md:size-8 text-secondary"/>
+            <h4 className="text-md font-bold text-text font-Mono md:text-lg">
+              {t("about.title_dev")}
+            </h4>
+            </div>
+            <h5 className="text-md font-bold text-tertiary font-Grotesk">Software Engineering & Full Stack Development</h5>
+            <p className="text-sm font-semibold text-muted font-Mono tracking-wide">
+              {t("about.desc_dev")}
+            </p>
+          </Card>
+          <div className="grid grid-cols-2 gap-4">
+          <Card>
+            <div className="flex items-center justify-start gap-4">
+            <BriefcaseBusiness className="size-5 md:size-8 text-secondary"/>
+            <h4 className="text-md font-bold text-text font-Mono md:text-lg">
+              {t("about.title_profexpe")}
+            </h4>
+            </div>
+          </Card>
+          <Card>
+            <div className="flex items-center justify-start gap-4">
+            <Users className="size-5 md:size-8 text-secondary"/>
+            <h4 className="text-md font-bold text-text font-Mono md:text-lg">
+              {t("about.title_orgaexpe")}
+            </h4>
+            </div>
+          </Card>
           </div>
         </div>
       </div>

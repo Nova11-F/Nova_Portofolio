@@ -43,6 +43,10 @@ const id = {
     education_title: "pendidikan",
     ability_desc: "Software Engineering",
     education_desc: "S1 Teknik Informatika",
+    title_dev: "Fokus Pengembangan",
+    desc_dev: "Berfokus pada pengembangan aplikasi web, perancangan sistem, pengelolaan database, serta implementasi fitur frontend dan backend yang berorientasi pada kebutuhan pengguna.",
+    title_profexpe: "Pengalaman Profesional",
+    title_orgaexpe: "Pengalaman Organisasi",
   },
   skill: {
     title: "Tingkat Kemahiran & Penguasaan Stack",
