@@ -36,6 +36,7 @@ const en = {
     list: "INFORMATICS ENGINEERING STUDENT",
     title_profile:
       "Not just building applications, but creating meaningful solutions.",
+    name_profile:"Firman Nova Prayoga",
     desc_profile:
       "I am a fifth-semester Informatics Engineering student at Universitas Negeri Surabaya, passionate about web development and system design. With professional internship experience in network infrastructure, I continue to develop my skills in frontend, backend, and database management to build functional and meaningful digital solutions.",
     ability_title: "SPECIALIZATION",

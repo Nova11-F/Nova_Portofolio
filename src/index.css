@@ -35,6 +35,7 @@ section {
   --tertiary: #06b6d4;
   --accent-soft: #312E81;
   --accent-text: #4338ca;
+  --secondary-rev: #06b6d4;
 }
 
 .dark {
@@ -50,6 +51,7 @@ section {
   --tertiary: #22d3ee;
   --accent-soft: #4338ca;
   --accent-text: #c7d2fe;
+  --secondary-rev: #7c3aed;
 }
 
 @theme inline {
@@ -63,6 +65,7 @@ section {
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-tertiary: var(--tertiary);
+  --color-secondary-rev : var(--secondary-rev);
   --color-accent-soft: var(--accent-soft);
   --color-accent-text: var(--accent-text);
 }
