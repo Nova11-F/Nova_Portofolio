@@ -41,12 +41,24 @@ const id = {
       "Saya adalah mahasiswa semester lima Teknik Informatika Universitas Negeri Surabaya dengan ketertarikan pada pengembangan aplikasi web dan perancangan sistem. Memiliki pengalaman di bidang infrastruktur jaringan melalui program internship, serta terus mengembangkan kemampuan dalam frontend, backend, dan pengelolaan database untuk membangun solusi digital yang fungsional dan bermanfaat.",
     ability_title: "SPESIALISASI",
     education_title: "pendidikan",
-    ability_desc: "Software Engineering",
+    ability_desc: "Full Stack Development",
     education_desc: "S1 Teknik Informatika",
     title_dev: "Fokus Pengembangan",
-    desc_dev: "Berfokus pada pengembangan aplikasi web, perancangan sistem, pengelolaan database, serta implementasi fitur frontend dan backend yang berorientasi pada kebutuhan pengguna.",
+    title2_dev: "Software Developer & Full Stack Development",
+    desc_dev:
+      "Berfokus pada pengembangan aplikasi web, perancangan sistem, pengelolaan database, serta implementasi fitur frontend dan backend yang berorientasi pada kebutuhan pengguna.",
     title_profexpe: "Pengalaman Profesional",
+    title2_profexpe: "Network Reliability Intern",
+    name_profexpe: "PT PGAS Telekomunikasi Nusantara",
+    desc_profexpe:
+      "Terlibat dalam audit infrastruktur jaringan, survei lapangan, dokumentasi teknis, serta rekonsiliasi inventaris aset perusahaan.",
+    period_profexpe: "Juni 2026 - Desember 2026",
     title_orgaexpe: "Pengalaman Organisasi",
+    title2_orgaexpe: "Staff Minat & Bakat",
+    name_orgaexpe: "STOPIA UNESA",
+    desc_orgaexpe:
+      "Mengelola kegiatan olahraga, koordinasi program kerja, serta pengelolaan anggaran dan fasilitas organisasi.",
+    period_orgaexpe: "Januari 2026 - Desember 2026",
   },
   skill: {
     title: "Tingkat Kemahiran & Penguasaan Stack",
