@@ -11,6 +11,7 @@ const navItems = [
   { id: 'projects', label: 'projects' },
   { id: 'skills', label: 'skills' },
   { id: 'experience', label: 'experience' },
+  { id: 'certificates', label: 'certificates' },
   { id: 'contact', label: 'contact' },
 ]
 
@@ -93,12 +94,12 @@ export default function Navbar() {
           shadow="none"
           className="hidden text-sm font-mono p-1 font-bold text-text uppercase md:flex md:items-center md:justify-center md:text-xl"
         >
-          <div className="relative grid grid-cols-5">
+          <div className="relative grid grid-cols-6">
 
             <div
               className="
                 absolute left-1 top-1 bottom-1
-                w-[calc((100%-8px)/5)]
+                w-[calc((100%-8px)/6)]
                 bg-secondary border-2 border-border
                 shadow-brutal-sm
                 transition-transform duration-300 ease-in-out

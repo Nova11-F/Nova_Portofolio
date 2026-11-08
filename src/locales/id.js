@@ -4,6 +4,7 @@ const id = {
     skills: "Keahlian",
     projects: "Proyek",
     experience: "Pengalaman",
+    certificates: "Sertifikat",
     contact: "Kontak",
   },
   announcementBar: {
@@ -17,6 +18,7 @@ const id = {
     project: "Karya & Implementasi Nyata",
     skill: "Toolkit & Kompetensi Inti",
     experience: "Jejak Langkah Profesional & Kampus",
+    certificates: "Kredensial & Sertifikasi Resmi",
     contact: "Mulai Kolaborasi Baru",
   },
   sectionLabel: {
@@ -24,6 +26,7 @@ const id = {
     project: "Proyek Unggulan",
     skill: "Keahlian & Teknologi",
     experience: "Pengalaman & Prestasi",
+    certificates: "Sertifikasi & Lisensi",
     contact: "Hubungi Saya",
   },
   hero: {

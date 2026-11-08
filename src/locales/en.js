@@ -4,6 +4,7 @@ const en = {
     skills: "Skills",
     projects: "Projects",
     experience: "Experience",
+    certificates: "Certificates",
     contact: "Contact",
   },
   announcementBar: {
@@ -17,6 +18,7 @@ const en = {
     project: "Real-World Projects & Implementation",
     skill: "Core Toolkit & Competencies",
     experience: "Professional & Academic Journey",
+    certificates: "Official Credentials & Certifications",
     contact: "Let's Start a Collaboration",
   },
   sectionLabel: {
@@ -24,6 +26,7 @@ const en = {
     project: "Featured Projects",
     skill: "Expertise & Technology",
     experience: "Experience & Achievements",
+    certificates: "Certifications & Licenses",
     contact: "Contact Me",
   },
   hero: {
