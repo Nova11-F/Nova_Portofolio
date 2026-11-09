@@ -73,6 +73,8 @@ const en = {
     verified: "Verified",
     official_document: "Official Document",
     view: "View Certificate",
+    open: "Open in New Tab",
+    download: "Download Certificate",
   },
 };
 

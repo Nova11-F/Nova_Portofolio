@@ -27,11 +27,11 @@ export default function Modal({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
+      className="fixed inset-0 z-100 flex items-center justify-center bg-black/60 p-4"
       onClick={onClose}
     >
       <div
-        className={`relative w-full${variants[variant]} ${className}`}
+        className={`relative w-full ${variants[variant]} ${className}`}
         onClick={(e) => e.stopPropagation()}
         {...props}
       >

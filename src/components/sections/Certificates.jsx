@@ -95,12 +95,13 @@ export default function Certificates() {
       {selectedCertificate && (
         <Modal
           onClose={() => setSelectedCertificate(null)}
-          className="max-h-[90vh] max-w-5xl overflow-y-auto p-4 md:p-8"
+          className="max-h-[90vh] max-w-5xl overflow-y-auto"
           role="dialog"
           aria-modal="true"
           aria-labelledby="certificate-title"
         >
-          <Card>
+        <Card 
+          className="p-4 md:p-8">
           <div className="flex items-center justify-between gap-4 mb-4">
             <div>
               <h3
@@ -114,13 +115,15 @@ export default function Certificates() {
               </p>
             </div>
 
-            <button
+            <Button
+            variant="surface"
+            size="none"
               onClick={() => setSelectedCertificate(null)}
               aria-label="Close modal"
-              className="p-2 hover:bg-secondary rounded-lg"
+              className="group p-3 hover:bg-secondary"
             >
-              <X />
-            </button>
+              <X strokeWidth={3} className="size-6 text-text group-hover:text-white"/>
+            </Button>
           </div>
 
           <div className="border-3 border-border shadow-brutal-sm">
@@ -132,24 +135,29 @@ export default function Certificates() {
           </div>
 
           <div className="flex flex-wrap justify-end gap-3 mt-6">
+            <Button
+            variant="surface">
             <a
               href={selectedCertificate.img}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2"
+              className="flex items-center text-text gap-2"
             >
               <ExternalLink className="size-5" />
-              Open in New Tab
+              {t("certificates.open")}
             </a>
+            </Button>
 
+            <Button>
             <a
               href={selectedCertificate.img}
               download={`${selectedCertificate.title_certificate}.webp`}
               className="flex items-center gap-2"
             >
               <Download className="size-5" />
-              Download Certificate
+              {t("certificates.download")}
             </a>
+            </Button>
           </div>
           </Card>
         </Modal>

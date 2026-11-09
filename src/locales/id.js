@@ -74,6 +74,8 @@ const id = {
     verified: "Verified",
     official_document: "Dokumen Resmi",
     view: "Lihat Sertifikat",
+    open: "Buka di Tab Baru",
+    download : "Unduh Sertifikat",
   },
 };
 
