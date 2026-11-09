@@ -19,7 +19,7 @@ export default function Certificates() {
       </p>
       <Card className="flex w-fit self-end items-center justify-end-safe gap-2">
         <span className="bg-secondary rounded-full p-1.5"></span>
-        <p className="text-sm font-bold text-text font-Mono md:text-md">
+        <p className="text-sm font-bold text-text font-Mono uppercase md:text-md">
           {t("certificates.active")}
         </p>
       </Card>
