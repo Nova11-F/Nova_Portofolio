@@ -2,7 +2,8 @@ import Card from "../ui/Card";
 import SectionHeader from "../ui/SectionHeader";
 import { useLanguage } from "../../context/LanguageContext";
 import Button from "../ui/Button";
-import { BadgeCheck, Certificate } from "lucide-react";
+import { BadgeCheck, Certificate, Code2, Award } from "lucide-react";
+import sertif  from "../../assets/images/certificates/sertif.png"
 
 export default function Certificates() {
   const { t } = useLanguage();
@@ -22,8 +23,8 @@ export default function Certificates() {
           {t("certificates.active")}
         </p>
       </Card>
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <Card className="flex flex-col gap-4">
+      <div className="grid grid-cols-1 gap-4 md:gap-6 md:grid-cols-2">
+        <Card className="flex flex-col gap-4 md:gap-6 hover:border-secondary hover:translate-[2px] hover:shadow-brutal-none">
           <div className="flex items-center justify-between">
             <Card
             padding="sm"
@@ -42,8 +43,22 @@ export default function Certificates() {
               </p>
             </Card>
           </div>
-          <div></div>
-          <div></div>
+          <div className="relative h-100 border-4 border-border shadow-brutal-md overflow-hidden">
+            <img
+            src={sertif}
+            alt="sertifikat"
+            className="object-center"/>
+          </div>
+          <div className="flex items-center justify-start gap-4 border-b-4 border-border pb-4 md:pb-6">
+            <Card
+            className="p-3">
+              <Code2 className="size-5 text-muted md:size-7"/>
+            </Card>
+            <div className="flex flex-col gap-1">
+              <h5 className="text-lg font-bold text-text font-Mono md:text-xl">Belajar Dasar Pemrogaman JavaScript</h5>
+              <p className="text-sm font-semibold text-muted font-Mono md:text-lg">dicoding</p>
+            </div>
+          </div>
           <div className="flex items-center justify-between">
             <p className="text-lg font-medium text-muted font-Grotesk uppercase md:text-xl">{t("certificates.official_document")}</p>
             <Button className="flex items-center justify-center gap-4">
