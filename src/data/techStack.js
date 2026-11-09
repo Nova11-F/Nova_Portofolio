@@ -1,4 +1,3 @@
-import { desc } from "framer-motion/client";
 import {
   SiHtml5,
   SiCss,

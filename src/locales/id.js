@@ -18,7 +18,7 @@ const id = {
     project: "Karya & Implementasi Nyata",
     skill: "Toolkit & Kompetensi Inti",
     experience: "Jejak Langkah Profesional & Kampus",
-    certificates: "Kredensial & Sertifikasi Resmi",
+    certificates: "Dokumen & Sertifikat Resmi",
     contact: "Mulai Kolaborasi Baru",
   },
   sectionLabel: {
@@ -67,6 +67,13 @@ const id = {
   skill: {
     title: "Tingkat Kemahiran & Penguasaan Stack",
     text: "Metrik evaluasi mandiri berdasarkan jam terbang implementasi proyek produksi, riset kampus, dan pengujian berkala.",
+  },
+  certificates: {
+    desc: "Pratinjau fisik lembaran sertifikat dan kredensial industri berstandar global. Klik setiap kartu untuk membuka lembar dokumen terotentikasi penuh dengan segel verifikasi digital.",
+    active: "4 Sertifikat Terverifikasi",
+    verified: "Verified",
+    official_document: "Dokumen Resmi",
+    view: "Lihat Sertifikat",
   },
 };
 

@@ -2,13 +2,6 @@ import Card from "../ui/Card";
 import { useLanguage } from "../../context/LanguageContext";
 import SectionHeader from "../ui/SectionHeader";
 
-const expItems = [
-  { id: "Work", label: "Experience Work" },
-  { id: "Education", label: "Education" },
-  { id: "organization", label: "organization" },
-  { id: "achievement", label: "achievement" },
-];
-
 export default function Experience() {
   const { t } = useLanguage();
 
