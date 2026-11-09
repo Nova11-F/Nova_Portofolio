@@ -2,11 +2,14 @@ import Card from "../ui/Card";
 import SectionHeader from "../ui/SectionHeader";
 import { useLanguage } from "../../context/LanguageContext";
 import Button from "../ui/Button";
-import { BadgeCheck, Certificate, Code2 } from "lucide-react";
+import { BadgeCheck, Certificate, X, ExternalLink, Download } from "lucide-react";
 import certificates from "../../data/certificates";
+import Modal from "../ui/Modal";
+import { useState } from "react";
 
 export default function Certificates() {
   const { t } = useLanguage();
+  const [selectedCertificate, setSelectedCertificate] = useState(null);
 
   return (
     <section
@@ -77,7 +80,10 @@ export default function Certificates() {
                 <p className="text-lg font-medium text-muted font-Grotesk uppercase md:text-xl">
                   {t("certificates.official_document")}
                 </p>
-                <Button className="flex items-center justify-center gap-4">
+                <Button
+                  onClick={() => setSelectedCertificate(certificate)}
+                  className="flex items-center justify-center gap-4"
+                >
                   <p className="uppercase">{t("certificates.view")}</p>
                   <Certificate className="size-5 md:size-8" />
                 </Button>
@@ -86,6 +92,68 @@ export default function Certificates() {
           );
         })}
       </div>
+      {selectedCertificate && (
+        <Modal
+          onClose={() => setSelectedCertificate(null)}
+          className="max-h-[90vh] max-w-5xl overflow-y-auto p-4 md:p-8"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="certificate-title"
+        >
+          <Card>
+          <div className="flex items-center justify-between gap-4 mb-4">
+            <div>
+              <h3
+                id="certificate-title"
+                className="text-lg font-bold text-text font-Mono md:text-2xl"
+              >
+                {selectedCertificate.title_certificate}
+              </h3>
+              <p className="text-sm font-semibold text-muted font-Grotesk">
+                {selectedCertificate.provider}
+              </p>
+            </div>
+
+            <button
+              onClick={() => setSelectedCertificate(null)}
+              aria-label="Close modal"
+              className="p-2 hover:bg-secondary rounded-lg"
+            >
+              <X />
+            </button>
+          </div>
+
+          <div className="border-3 border-border shadow-brutal-sm">
+            <img
+              src={selectedCertificate.img}
+              alt={selectedCertificate.title_certificate}
+              className="w-full max-h-[65vh] object-contain"
+            />
+          </div>
+
+          <div className="flex flex-wrap justify-end gap-3 mt-6">
+            <a
+              href={selectedCertificate.img}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              <ExternalLink className="size-5" />
+              Open in New Tab
+            </a>
+
+            <a
+              href={selectedCertificate.img}
+              download={`${selectedCertificate.title_certificate}.webp`}
+              className="flex items-center gap-2"
+            >
+              <Download className="size-5" />
+              Download Certificate
+            </a>
+          </div>
+          </Card>
+        </Modal>
+      )}
     </section>
   );
 }
