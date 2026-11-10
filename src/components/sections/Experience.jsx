@@ -21,6 +21,7 @@ export default function Experience() {
       <div className="flex flex-wrap items-center justify-start gap-2 md:gap-4">
         {experience.map((section) => (
           <Button
+            size="xs"
             key={section.id}
             variant={activeTab === section.id ? "default" : "surface"}
             onClick={() => setActiveTab(section.id)}
