@@ -7,6 +7,7 @@ export default function Card({
   ...props
 }) {
   const variants = {
+    none:"",
     default: "bg-surface",
     primary: "bg-primary",
     secondary: "bg-secondary text-white",

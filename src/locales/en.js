@@ -67,6 +67,11 @@ const en = {
     title: "Stack Skill & Mastery Level",
     text: "Self-evaluation metrics based on accumulated experience in production project implementation, academic research, and periodic testing.",
   },
+  experience: {
+    experience: "Work Experience",
+    education: "Education",
+    organization: "Organization",
+  },
   certificates: {
     desc: "Preview of official certificates and globally recognized industry credentials. Click any card to open the full authenticated document with its digital verification seal.",
     active: "4 Verified Certificates",

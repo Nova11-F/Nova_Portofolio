@@ -68,6 +68,11 @@ const id = {
     title: "Tingkat Kemahiran & Penguasaan Stack",
     text: "Metrik evaluasi mandiri berdasarkan jam terbang implementasi proyek produksi, riset kampus, dan pengujian berkala.",
   },
+  experience: {
+    experience: "Pengalaman Kerja",
+    education: "Pendidikan",
+    organization: "Organisasi",
+  },
   certificates: {
     desc: "Pratinjau fisik lembaran sertifikat dan kredensial industri berstandar global. Klik setiap kartu untuk membuka lembar dokumen terotentikasi penuh dengan segel verifikasi digital.",
     active: "4 Sertifikat Terverifikasi",
