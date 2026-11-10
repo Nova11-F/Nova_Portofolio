@@ -62,17 +62,39 @@ const id = {
     name_orgaexpe: "STOPIA UNESA",
     desc_orgaexpe:
       "Mengelola kegiatan olahraga, koordinasi program kerja, serta pengelolaan anggaran dan fasilitas organisasi.",
-    period_orgaexpe: "Januari 2026 - Desember 2026",
+    period_orgaexpe: "Februari 2026 - Desember 2026",
   },
   skill: {
     title: "Tingkat Kemahiran & Penguasaan Stack",
     text: "Metrik evaluasi mandiri berdasarkan jam terbang implementasi proyek produksi, riset kampus, dan pengujian berkala.",
   },
   experience: {
-    experience: "Pengalaman Kerja",
-    education: "Pendidikan",
-    organization: "Organisasi",
-  },
+  experience: "Pengalaman Kerja",
+  education: "Pendidikan",
+  organization: "Organisasi",
+
+  work_type: "Praktik Kerja Lapangan",
+  work_name: "Network Reliability Intern",
+  work_desc:
+    "Saya menjalani magang sebagai Network Reliability Intern dengan fokus pada pengelolaan aset dan pemeliharaan infrastruktur jaringan perusahaan. Kegiatan saya meliputi audit jaringan, rekonsiliasi inventaris aset, serta survei lapangan dan analisis teknis untuk mendukung optimalisasi dan perbaikan jaringan.",
+  work_period: "Juni 2023 - Desember 2023",
+
+  higher_education: "Pendidikan Tinggi",
+  unesa_desc:
+    "Menempuh pendidikan S1 Teknik Informatika dengan minat pada pengembangan perangkat lunak dan teknologi informasi.",
+  unesa_period: "Agustus 2024 - Sekarang",
+
+  vocational_education: "Sekolah Menengah Kejuruan",
+  smk_desc:
+    "Menempuh pendidikan di bidang teknologi informasi dengan fokus pada jaringan komputer.",
+  smk_period: "Juli 2021 - Juni 2024",
+
+  organization_type: "Organisasi Mahasiswa Daerah",
+  organization_name: "Staff Minat & Bakat",
+  organization_desc:
+    "Aktif sebagai Staff Minat & Bakat STOPIA UNESA dengan tanggung jawab merencanakan kegiatan olahraga, mengelola dan mengaudit anggaran keanggotaan, serta mengoordinasikan pelaksanaan program kerja departemen agar berjalan dengan lancar.",
+  organization_period: "Februari 2026 - Sekarang",
+},
   certificates: {
     desc: "Pratinjau fisik lembaran sertifikat dan kredensial industri berstandar global. Klik setiap kartu untuk membuka lembar dokumen terotentikasi penuh dengan segel verifikasi digital.",
     active: "4 Sertifikat Terverifikasi",
@@ -80,7 +102,7 @@ const id = {
     official_document: "Dokumen Resmi",
     view: "Lihat Sertifikat",
     open: "Buka di Tab Baru",
-    download : "Unduh Sertifikat",
+    download: "Unduh Sertifikat",
   },
 };
 
