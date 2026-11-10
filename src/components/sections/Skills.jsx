@@ -20,7 +20,7 @@ export default function Skill() {
           {t("skill.text")}
         </p>
       </div>
-      <div className="grid grid-cols-4 grid-rows-2 gap-4 md:gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
         {techStack.map((tech) => {
           const Icon = tech.icon;
 
