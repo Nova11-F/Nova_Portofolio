@@ -76,7 +76,7 @@ export default function Contact() {
                 {t("contact.title")}
               </p>
             </Card>
-            <h3 className="text-3xl font-bold text-text font-Mono uppercase leading-normal xl:leading-none xl:text-4xl">
+            <h3 className="text-3xl font-bold text-text font-Mono uppercase leading-normal md:leading-none xl:text-4xl">
               {t("contact.headline_start")}{" "}
               <span className="text-white bg-secondary border-br-3 border-border shadow-brutal-md px-2 md:px-4">
                 {t("contact.headline_idea")}

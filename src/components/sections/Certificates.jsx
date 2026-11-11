@@ -26,7 +26,7 @@ export default function Certificates() {
           {t("certificates.active")}
         </p>
       </Card>
-      <div className="grid grid-cols-1 gap-4 md:gap-6 xl:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 md:gap-6 lg:grid-cols-2">
         {certificates.map((certificate) => {
           const Icon = certificate.icon;
 
@@ -70,7 +70,7 @@ export default function Certificates() {
                   <Icon className="size-7 text-muted " />
                 </Card>
                 <div className="flex flex-col gap-1">
-                  <h5 className="text-lg font-bold text-text font-Mono xl:text-xl">
+                  <h5 className="text-md font-bold text-text font-Mono xl:text-xl">
                     {certificate.title_certificate}
                   </h5>
                   <p className="text-sm font-semibold text-muted font-Mono xl:text-lg">
