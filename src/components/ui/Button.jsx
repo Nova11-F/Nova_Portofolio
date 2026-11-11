@@ -8,7 +8,8 @@ export default function Button({
 }) {
   const variants = {
     default: "bg-secondary text-white",
-    surface:"bg-surface"
+    surface:"bg-surface",
+    tertiary: "bg-tertiary text-white"
   };
 
   const sizes = {
