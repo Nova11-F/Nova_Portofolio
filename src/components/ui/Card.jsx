@@ -35,7 +35,7 @@ export default function Card({
 
   return (
     <div
-      className={`border-3 border-border cursor-pointer transition-all duration-300 ${variants[variant]} ${paddings[padding]} ${shadowVariants[shadow]} ${className}`}
+      className={`border-3 border-border transition-all duration-300 ${variants[variant]} ${paddings[padding]} ${shadowVariants[shadow]} ${className}`}
       {...props}
     >
       {children}
