@@ -104,6 +104,12 @@ const id = {
     open: "Buka di Tab Baru",
     download: "Unduh Sertifikat",
   },
+  footer: {
+    title: "Firman Nova - 2026",
+    desc: "Didesain dengan metodologi Neobrutalisme & dioptimalkan untuk mobile web standards. Dibuat dengan HTML5, Tailwind CSS, & Vanilla JS.",
+    info_univ: "Universitas Negeri Surabaya",
+    info_prodi: "Program Studi Teknik Informatika",
+  }
 };
 
 export default id;

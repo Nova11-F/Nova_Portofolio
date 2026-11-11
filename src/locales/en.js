@@ -68,32 +68,32 @@ const en = {
     text: "Self-evaluation metrics based on accumulated experience in production project implementation, academic research, and periodic testing.",
   },
   experience: {
-  experience: "Work Experience",
-  education: "Education",
-  organization: "Organization",
+    experience: "Work Experience",
+    education: "Education",
+    organization: "Organization",
 
-  work_type: "Internship",
-  work_name: "Network Reliability Intern",
-  work_desc:
-    "I worked as a Network Reliability Intern, focusing on asset management and company network infrastructure maintenance. My responsibilities included network audits, asset inventory reconciliation, and field surveys with technical analysis to support network optimization and improvement.",
-  work_period: "June 2023 - December 2023",
+    work_type: "Internship",
+    work_name: "Network Reliability Intern",
+    work_desc:
+      "I worked as a Network Reliability Intern, focusing on asset management and company network infrastructure maintenance. My responsibilities included network audits, asset inventory reconciliation, and field surveys with technical analysis to support network optimization and improvement.",
+    work_period: "June 2023 - December 2023",
 
-  higher_education: "Higher Education",
-  unesa_desc:
-    "Pursuing a Bachelor's Degree in Informatics Engineering, with an interest in software development and information technology.",
-  unesa_period: "August 2024 - Present",
+    higher_education: "Higher Education",
+    unesa_desc:
+      "Pursuing a Bachelor's Degree in Informatics Engineering, with an interest in software development and information technology.",
+    unesa_period: "August 2024 - Present",
 
-  vocational_education: "Vocational High School",
-  smk_desc:
-    "Studied information technology with a focus on computer networking.",
-  smk_period: "July 2021 - June 2024",
+    vocational_education: "Vocational High School",
+    smk_desc:
+      "Studied information technology with a focus on computer networking.",
+    smk_period: "July 2021 - June 2024",
 
-  organization_type: "Regional Student Organization",
-  organization_name: "Interests & Talents Staff",
-  organization_desc:
-    "Actively involved as an Interests & Talents Staff member at STOPIA UNESA, responsible for planning sports activities, managing and auditing membership funds, and coordinating departmental programs to ensure their smooth execution.",
-  organization_period: "February 2026 - Present",
-},
+    organization_type: "Regional Student Organization",
+    organization_name: "Interests & Talents Staff",
+    organization_desc:
+      "Actively involved as an Interests & Talents Staff member at STOPIA UNESA, responsible for planning sports activities, managing and auditing membership funds, and coordinating departmental programs to ensure their smooth execution.",
+    organization_period: "February 2026 - Present",
+  },
   certificates: {
     desc: "Preview of official certificates and globally recognized industry credentials. Click any card to open the full authenticated document with its digital verification seal.",
     active: "4 Verified Certificates",
@@ -102,6 +102,12 @@ const en = {
     view: "View Certificate",
     open: "Open in New Tab",
     download: "Download Certificate",
+  },
+  footer: {
+    title: "Firman Nova - 2026",
+    desc: "Designed using Neobrutalism principles and optimized for mobile web standards. Built with HTML5, Tailwind CSS, and Vanilla JavaScript.",
+    info_univ: "Universitas Negeri Surabaya",
+    info_prodi: "Informatics Engineering Study Program",
   },
 };
 
