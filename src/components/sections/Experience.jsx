@@ -21,16 +21,18 @@ export default function Experience() {
       <div className="flex flex-wrap items-center justify-start gap-2 md:gap-4">
         {experience.map((section) => (
           <Button
-            size="xs"
+            size="none"
             key={section.id}
-            variant={activeTab === section.id ? "default" : "surface"}
+            variant={activeTab === section.id ? "tertiary" : "surface"}
             onClick={() => setActiveTab(section.id)}
-            className={`flex items-center justify-center gap-2 ${
-              activeTab === section.id ? "shadow-brutal-none translate-[2px]" : ""
+            className={`flex items-center justify-center gap-2 px-4 py-1.5 xl:px-6 xl:py-3 ${
+              activeTab === section.id
+                ? "shadow-brutal-none translate-[2px]"
+                : ""
             }`}
           >
-            <p >{t(section.label)}</p>
-            <span className="text-text bg-bg-section border-3 border-border px-3 py-1">
+            <p className="text-sm lg:text-lg">{t(section.label)}</p>
+            <span className="text-sm text-text bg-bg-section border-3 border-border px-2 py-1 lg:text-md lg:px-3 lg:py-2">
               {section.detail.length}
             </span>
           </Button>
@@ -41,28 +43,28 @@ export default function Experience() {
         {activeExperience.detail.map((item, index) => (
           <Card
             key={`${activeTab}-${index}`}
-            className="flex flex-col gap-4 md:flex-row md:items-center md:justify-start md:gap-8 md:p-8"
+            className="flex flex-col gap-4 p-6 xl:flex-row xl:items-center xl:justify-start xl:gap-8 lg:p-8"
           >
-            <div className="flex shrink-0 flex-col gap-2 md:gap-4">
-              <p className="whitespace-nowrap text-md font-semibold text-secondary font-Mono uppercase md:text-lg">
+            <div className="grid grid-cols-2 gap-2 xl:flex xl:shrink-0 xl:flex-col xl:gap-2">
+              <p className="text-md font-semibold text-secondary font-Mono uppercase xl:whitespace-nowrap xl:text-lg">
                 {t(item.type)}
               </p>
 
-              <h4 className="whitespace-nowrap text-md font-bold text-text font-Mono uppercase md:text-2xl">
+              <h4 className="text-right text-md font-bold text-text font-Mono uppercase xl:text-left xl:whitespace-nowrap xl:text-2xl">
                 {t(item.period)}
               </h4>
 
-              <p className="whitespace-nowrap text-md font-semibold text-muted font-Grotesk md:text-lg">
+              <p className="col-span-2 text-md font-semibold text-muted font-Grotesk xl:text-lg">
                 {item.location}
               </p>
             </div>
 
             <div className="flex min-w-0 flex-col justify-center gap-2">
-              <h3 className="text-2xl font-bold text-text font-Mono md:text-4xl">
+              <h3 className="text-2xl font-bold text-text font-Mono xl:text-4xl">
                 {t(item.name)}
               </h3>
 
-              <p className="text-sm font-medium text-muted font-Grotesk md:text-lg">
+              <p className="text-sm font-medium text-muted font-Grotesk xl:text-lg">
                 {t(item.desc)}
               </p>
             </div>
