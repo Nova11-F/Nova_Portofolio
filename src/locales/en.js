@@ -103,6 +103,55 @@ const en = {
     open: "Open in New Tab",
     download: "Download Certificate",
   },
+  contact: {
+    username:"Nova-11F",
+    title: "Let's Build Something Great",
+    available: "Available 2027 / 2028",
+
+    collaboration: "Open to Collaboration",
+    headline_start: "LET'S TURN",
+    headline_idea: "YOUR IDEAS",
+    headline_mid:"Into",
+    headline_end: "Something Great.",
+
+    description:
+      "I'm always open to new ideas, exciting projects, and meaningful collaborations. Feel free to reach out, and let's create something impactful together.",
+
+    open_ideas: "Open to New Ideas & Projects",
+
+    email: {
+      title: "Email",
+      label: "Send Me an Email",
+      copy: "Copy Email",
+      copied: "Email Copied",
+    },
+
+    whatsapp: {
+      title: "WhatsApp / Chat",
+      label: "Direct Chat & Calls",
+      action: "Chat on WhatsApp",
+      message:
+        "Hello Firman, I'm interested in discussing and exploring a potential collaboration with you.",
+    },
+
+    location: {
+      title: "Location",
+      label: "Based In",
+      timezone: "Time Zone : WIB (UTC+7)",
+    },
+
+    internship: {
+      title: "Internship Status",
+      label: "Internship Availability",
+      value: "January 2027 - August 2027",
+      status: "Available for On-Site Work",
+    },
+
+    social: {
+      title: "Professional Networks & Repositories",
+      description: "Connect with me directly across public platforms",
+    },
+  },
   footer: {
     title: "Firman Nova - 2026",
     desc: "Designed using Neobrutalism principles and optimized for mobile web standards. Built with HTML5, Tailwind CSS, and Vanilla JavaScript.",

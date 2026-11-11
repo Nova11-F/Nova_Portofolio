@@ -31,40 +31,41 @@ const socials = {
 
   email: {
     id: "email",
-    title: "Email",
+    title: "contact.email.title",
     icon: Mail,
-    label: "Kirim Email Langsung",
+    label: "contact.email.label",
     value: "firmannovaprayoga@gmail.com",
     action: "mailto:firmannovaprayoga@gmail.com",
   },
 
   whatsapp: {
     id: "whatsapp",
-    title: "Whatsapp / Chat",
+    title: "contact.whatsapp.title",
     icon: MessageSquareText,
-    label: "Direct Chat & Call",
+    label: "contact.whatsapp.label",
     value: "+62 813-1491-5322",
     phone: "6281314915322",
+    action: "contact.whatsapp.action",
     message:
       "Halo Firman, saya tertarik untuk berdiskusi dan berkolaborasi dengan Anda.",
   },
 
   location: {
     id: "location",
-    title: "Location",
+    title: "contact.location.title",
     icon: MapPinned,
-    label: "Basis Aktivitas",
+    label: "contact.location.label",
     value: "Jakarta & Surabaya, ID",
-    timezone: "WIB (UTC+7)",
+    timezone: "contact.location.timezone",
   },
 
   internship: {
     id: "internship",
-    title: "Status Magang",
+    title: "contact.internship.title",
     icon: CalendarCheck,
-    label: "Ketersediaan Magang",
-    value: "Januari 2027 - Agustus 2027",
-    status: "Siap Kerja On-Site",
+    label: "contact.internship.label",
+    value: "contact.internship.value",
+    status: "contact.internship.status",
   },
 };
 

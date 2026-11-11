@@ -69,32 +69,32 @@ const id = {
     text: "Metrik evaluasi mandiri berdasarkan jam terbang implementasi proyek produksi, riset kampus, dan pengujian berkala.",
   },
   experience: {
-  experience: "Pengalaman Kerja",
-  education: "Pendidikan",
-  organization: "Organisasi",
+    experience: "Pengalaman Kerja",
+    education: "Pendidikan",
+    organization: "Organisasi",
 
-  work_type: "Praktik Kerja Lapangan",
-  work_name: "Network Reliability Intern",
-  work_desc:
-    "Saya menjalani magang sebagai Network Reliability Intern dengan fokus pada pengelolaan aset dan pemeliharaan infrastruktur jaringan perusahaan. Kegiatan saya meliputi audit jaringan, rekonsiliasi inventaris aset, serta survei lapangan dan analisis teknis untuk mendukung optimalisasi dan perbaikan jaringan.",
-  work_period: "Juni 2023 - Desember 2023",
+    work_type: "Praktik Kerja Lapangan",
+    work_name: "Network Reliability Intern",
+    work_desc:
+      "Saya menjalani magang sebagai Network Reliability Intern dengan fokus pada pengelolaan aset dan pemeliharaan infrastruktur jaringan perusahaan. Kegiatan saya meliputi audit jaringan, rekonsiliasi inventaris aset, serta survei lapangan dan analisis teknis untuk mendukung optimalisasi dan perbaikan jaringan.",
+    work_period: "Juni 2023 - Desember 2023",
 
-  higher_education: "Pendidikan Tinggi",
-  unesa_desc:
-    "Menempuh pendidikan S1 Teknik Informatika dengan minat pada pengembangan perangkat lunak dan teknologi informasi.",
-  unesa_period: "Agustus 2024 - Sekarang",
+    higher_education: "Pendidikan Tinggi",
+    unesa_desc:
+      "Menempuh pendidikan S1 Teknik Informatika dengan minat pada pengembangan perangkat lunak dan teknologi informasi.",
+    unesa_period: "Agustus 2024 - Sekarang",
 
-  vocational_education: "Sekolah Menengah Kejuruan",
-  smk_desc:
-    "Menempuh pendidikan di bidang teknologi informasi dengan fokus pada jaringan komputer.",
-  smk_period: "Juli 2021 - Juni 2024",
+    vocational_education: "Sekolah Menengah Kejuruan",
+    smk_desc:
+      "Menempuh pendidikan di bidang teknologi informasi dengan fokus pada jaringan komputer.",
+    smk_period: "Juli 2021 - Juni 2024",
 
-  organization_type: "Organisasi Mahasiswa Daerah",
-  organization_name: "Staff Minat & Bakat",
-  organization_desc:
-    "Aktif sebagai Staff Minat & Bakat STOPIA UNESA dengan tanggung jawab merencanakan kegiatan olahraga, mengelola dan mengaudit anggaran keanggotaan, serta mengoordinasikan pelaksanaan program kerja departemen agar berjalan dengan lancar.",
-  organization_period: "Februari 2026 - Sekarang",
-},
+    organization_type: "Organisasi Mahasiswa Daerah",
+    organization_name: "Staff Minat & Bakat",
+    organization_desc:
+      "Aktif sebagai Staff Minat & Bakat STOPIA UNESA dengan tanggung jawab merencanakan kegiatan olahraga, mengelola dan mengaudit anggaran keanggotaan, serta mengoordinasikan pelaksanaan program kerja departemen agar berjalan dengan lancar.",
+    organization_period: "Februari 2026 - Sekarang",
+  },
   certificates: {
     desc: "Pratinjau fisik lembaran sertifikat dan kredensial industri berstandar global. Klik setiap kartu untuk membuka lembar dokumen terotentikasi penuh dengan segel verifikasi digital.",
     active: "4 Sertifikat Terverifikasi",
@@ -104,12 +104,62 @@ const id = {
     open: "Buka di Tab Baru",
     download: "Unduh Sertifikat",
   },
+  contact: {
+    username:"Nova-11F",
+    title: "Mari Bangun Sesuatu yang Hebat",
+    available: "Tersedia 2027 / 2028",
+
+    collaboration: "Terbuka untuk Kolaborasi",
+    headline_start: "Mari Wujudkan",
+    headline_idea: "IDE ANDA",
+    headline_mid:"Menjadi",
+    headline_end: "Sesuatu yang Hebat.",
+
+    description:
+      "Saya selalu terbuka untuk ide-ide baru, proyek menarik, dan kolaborasi yang bermakna. Jangan ragu untuk menghubungi saya, mari ciptakan sesuatu yang berdampak bersama.",
+
+    open_ideas: "Terbuka untuk Ide & Proyek Baru",
+
+    email: {
+      title: "Email",
+      label: "Kirim Email Langsung",
+      copy: "Salin Email",
+      copied: "Email Tersalin",
+      send: "Kirim Email",
+    },
+
+    whatsapp: {
+      title: "WhatsApp / Chat",
+      label: "Pesan Langsung & Panggilan",
+      action: "Chat WhatsApp",
+      message:
+        "Halo Firman, saya tertarik untuk berdiskusi dan berkolaborasi dengan Anda.",
+    },
+
+    location: {
+      title: "Lokasi",
+      label: "Basis Aktivitas",
+      timezone: "Zona Waktu : WIB (UTC+7)",
+    },
+
+    internship: {
+      title: "Status Magang",
+      label: "Ketersediaan Magang",
+      value: "Januari 2027 - Agustus 2027",
+      status: "Siap Bekerja On-Site",
+    },
+
+    social: {
+      title: "Jaringan & Repositori Profesional",
+      description: "Terhubung secara langsung di berbagai platform publik",
+    },
+  },
   footer: {
     title: "Firman Nova - 2026",
     desc: "Didesain dengan metodologi Neobrutalisme & dioptimalkan untuk mobile web standards. Dibuat dengan HTML5, Tailwind CSS, & Vanilla JS.",
     info_univ: "Universitas Negeri Surabaya",
     info_prodi: "Program Studi Teknik Informatika",
-  }
+  },
 };
 
 export default id;
