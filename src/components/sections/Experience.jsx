@@ -37,7 +37,7 @@ export default function Experience() {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 gap-2 md:gap-4">
+      <div className="grid grid-cols-1 gap-4">
         {activeExperience.detail.map((item, index) => (
           <Card
             key={`${activeTab}-${index}`}
