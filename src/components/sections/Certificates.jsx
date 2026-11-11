@@ -116,11 +116,11 @@ export default function Certificates() {
             </div>
 
             <Button
-            variant="surface"
+            variant=""
             size="none"
               onClick={() => setSelectedCertificate(null)}
               aria-label="Close modal"
-              className="group p-3 hover:bg-red-500"
+              className="bg-surface group p-3 hover:bg-red-500"
             >
               <X strokeWidth={3} className="size-6 text-text group-hover:text-white"/>
             </Button>

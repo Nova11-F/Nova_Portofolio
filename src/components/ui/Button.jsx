@@ -8,7 +8,7 @@ export default function Button({
 }) {
   const variants = {
     default: "bg-secondary text-white",
-    surface:"bg-surface",
+    surface:"bg-surface text-text hover:bg-tertiary",
     tertiary: "bg-tertiary text-white"
   };
 
