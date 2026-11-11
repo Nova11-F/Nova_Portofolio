@@ -45,7 +45,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-8 px-10 xl:px-20 xl:max-w-full bg-bg py-10 xl:py-20"
+      className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-8 px-10 xl:px-20 md:max-w-full bg-bg py-10 xl:py-20"
     >
       <SectionHeader number="05" section="contact" label="contact" />
       <Card className="flex flex-col gap-4 xl:gap-8 p-6 xl:p-10">

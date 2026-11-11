@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col mx-auto max-w-5xl px-10 md:px-20 md:max-w-full bg-bg py-10 md:py-20"
+      className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-8 px-10 xl:px-20 md:max-w-full bg-bg py-10 xl:py-20"
     >
       <SectionHeader number="01" section="about" label="about" />
       <div className="grid grid-cols-1 items-stretch mt-8 gap-4 md:grid-cols-2">

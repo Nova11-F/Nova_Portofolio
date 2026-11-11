@@ -8,7 +8,7 @@ const { t } = useLanguage()
   return (
     <section 
     id="projects"
-    className="flex flex-col mx-auto max-w-5xl px-10 md:px-20 md:max-w-full bg-bg py-10 md:py-20">
+    className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-8 px-10 xl:px-20 md:max-w-full bg-bg py-10 xl:py-20">
      <SectionHeader
      number="02"
      section="project" 

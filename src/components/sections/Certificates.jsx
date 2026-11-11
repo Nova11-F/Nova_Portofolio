@@ -14,7 +14,7 @@ export default function Certificates() {
   return (
     <section
       id="certificates"
-      className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-8 px-10 xl:px-20 xl:max-w-full bg-bg py-10 xl:py-20"
+      className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-8 px-10 xl:px-20 md:max-w-full bg-bg py-10 xl:py-20"
     >
       <SectionHeader number="05" section="certificates" label="certificates" />
       <p className="text-sm font-bold text-muted font-Grotesk text-center tracking-wider mx-auto max-w-2xl xl:text-lg xl:max-w-6xl">
