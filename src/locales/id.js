@@ -29,13 +29,24 @@ const id = {
     certificates: "Sertifikasi & Lisensi",
     contact: "Hubungi Saya",
   },
-  hero: {
-    greeting: "Halo, saya",
-    role: "Pengembang Frontend",
-    description:
-      "Saya membangun antarmuka web yang bersih dan mudah digunakan.",
-    downloadCv: "Unduh CV",
+hero: {
+  badge: "Mahasiswa Teknik Informatika",
+  headline_start: "Membangun Solusi Digital yang",
+  headline_highlight: "Inovatif",
+  headline_end: ", Fungsional & Berdampak.",
+  description:
+    "Saya adalah mahasiswa Teknik Informatika Universitas Negeri Surabaya yang berfokus pada pengembangan perangkat lunak, khususnya Full Stack Development. Menggabungkan fondasi teknis, pemecahan masalah, dan perhatian terhadap pengalaman pengguna untuk membangun solusi digital yang bermakna.",
+  projects: "Lihat Proyek Saya",
+  cv: "Lihat CV",
+  status: "Terbuka untuk Peluang",
+  profile: {
+    department: "Teknik Informatika",
+    university: "Universitas Negeri Surabaya",
+    semester: "Semester 5",
+    gpa: "IPK 3.82 / 4.00",
+    focus: "Software Engineering",
   },
+},
   about: {
     list: "Mahasiswa teknik Informatika",
     title_profile:

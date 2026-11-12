@@ -29,12 +29,24 @@ const en = {
     certificates: "Certifications & Licenses",
     contact: "Contact Me",
   },
-  hero: {
-    greeting: "Hi, I'm",
-    role: "Frontend Developer",
-    description: "I build clean, user-friendly web interfaces.",
-    downloadCv: "Download CV",
+hero: {
+  badge: "Informatics Engineering Student",
+  headline_start: "Building Digital Solutions That Are ",
+  headline_highlight: "Innovative",
+  headline_end: ", Functional & Impactful.",
+  description:
+    "I'm an Informatics Engineering student at Universitas Negeri Surabaya, focusing on software development, particularly Full Stack Development. I combine technical foundations, problem-solving, and user experience considerations to build meaningful digital solutions.",
+  projects: "Explore My Projects",
+  cv: "View My CV",
+  status: "Open to Opportunities",
+  profile: {
+    department: "Informatics Engineering",
+    university: "Universitas Negeri Surabaya",
+    semester: "Semester 5",
+    gpa: "IPK 3.82 / 4.00",
+    focus: "Software Engineering",
   },
+},
   about: {
     list: "INFORMATICS ENGINEERING STUDENT",
     title_profile:
