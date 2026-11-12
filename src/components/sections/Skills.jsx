@@ -9,7 +9,7 @@ export default function Skill() {
   return (
     <section
       id="skills"
-      className="flex flex-col mx-auto max-w-5xl px-10 xl:px-20 md:max-w-full bg-bg py-10 xl:py-20"
+      className="flex flex-col mx-auto max-w-5xl px-10 xl:px-20 md:max-w-full bg-bg py-10 xl:py-20 scroll-mt-[100px] xl:scroll-mt-[70px]"
     >
       <SectionHeader number="03" section="skill" label="skill" />
       <div className="flex flex-col justify-center items-center gap-2 py-6 xl:gap-4 xl:py-8">

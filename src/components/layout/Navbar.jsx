@@ -143,8 +143,8 @@ export default function Navbar() {
           </Button>
 
           <Button
-          variant="surface"
-          size="none"
+            variant="surface"
+            size="none"
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-label={
               menuOpen ? "Close navigation menu" : "Open navigation menu"
@@ -171,6 +171,7 @@ export default function Navbar() {
       <div
         id="mobile-navigation"
         className={`
+        absolute left-0 top-full w-full
         overflow-hidden border-t-2 border-border
         transition-all duration-300 ease-in-out
         xl:hidden

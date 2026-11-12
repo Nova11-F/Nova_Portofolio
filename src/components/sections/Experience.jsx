@@ -14,7 +14,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-8 px-10 xl:px-20 md:max-w-full bg-bg py-10 xl:py-20"
+      className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-8 px-10 xl:px-20 md:max-w-full bg-bg py-10 xl:py-20 scroll-mt-[100px] xl:scroll-mt-[70px]"
     >
       <SectionHeader number="04" section="experience" label="experience" />
 
