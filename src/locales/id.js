@@ -31,9 +31,10 @@ const id = {
   },
 hero: {
   badge: "Mahasiswa Teknik Informatika",
-  headline_start: "Membangun Solusi Digital yang",
-  headline_highlight: "Inovatif",
-  headline_end: ", Fungsional & Berdampak.",
+  headline_start: "Membangun Solusi Digital yang ",
+  headline_highlight: "Inovatif,",
+  headline_mid: " Fungsional &",
+  headline_end: "Berdampak.",
   description:
     "Saya adalah mahasiswa Teknik Informatika Universitas Negeri Surabaya yang berfokus pada pengembangan perangkat lunak, khususnya Full Stack Development. Menggabungkan fondasi teknis, pemecahan masalah, dan perhatian terhadap pengalaman pengguna untuk membangun solusi digital yang bermakna.",
   projects: "Lihat Proyek Saya",

@@ -29,24 +29,25 @@ const en = {
     certificates: "Certifications & Licenses",
     contact: "Contact Me",
   },
-hero: {
-  badge: "Informatics Engineering Student",
-  headline_start: "Building Digital Solutions That Are ",
-  headline_highlight: "Innovative",
-  headline_end: ", Functional & Impactful.",
-  description:
-    "I'm an Informatics Engineering student at Universitas Negeri Surabaya, focusing on software development, particularly Full Stack Development. I combine technical foundations, problem-solving, and user experience considerations to build meaningful digital solutions.",
-  projects: "Explore My Projects",
-  cv: "View My CV",
-  status: "Open to Opportunities",
-  profile: {
-    department: "Informatics Engineering",
-    university: "Universitas Negeri Surabaya",
-    semester: "Semester 5",
-    gpa: "IPK 3.82 / 4.00",
-    focus: "Software Engineering",
+  hero: {
+    badge: "Informatics Engineering Student",
+    headline_start: "Building Digital Solutions That Are ",
+    headline_highlight: "Innovative,",
+    headline_mid: " Functional &",
+    headline_end: "Impactful.",
+    description:
+      "I'm an Informatics Engineering student at Universitas Negeri Surabaya, focusing on software development, particularly Full Stack Development. I combine technical foundations, problem-solving, and user experience considerations to build meaningful digital solutions.",
+    projects: "Explore My Projects",
+    cv: "View My CV",
+    status: "Open to Opportunities",
+    profile: {
+      department: "Informatics Engineering",
+      university: "Universitas Negeri Surabaya",
+      semester: "Semester 5",
+      gpa: "IPK 3.82 / 4.00",
+      focus: "Software Engineering",
+    },
   },
-},
   about: {
     list: "INFORMATICS ENGINEERING STUDENT",
     title_profile:
@@ -116,14 +117,14 @@ hero: {
     download: "Download Certificate",
   },
   contact: {
-    username:"Nova-11F",
+    username: "Nova-11F",
     title: "Let's Build Something Great",
     available: "Available 2027 / 2028",
 
     collaboration: "Open to Collaboration",
     headline_start: "LET'S TURN",
     headline_idea: "YOUR IDEAS",
-    headline_mid:"Into",
+    headline_mid: "Into",
     headline_end: "Something Great.",
 
     description:
