@@ -28,7 +28,7 @@ export default function LanguageToggle() {
               aria-label={`Change language to ${language.toUpperCase()}`}
               aria-pressed={isActive}
               className={`
-              relative z-10 px-3 py-1 text-md font-bold font-Mono text-bg cursor-pointer transition-colors duration-200 md:text-lg
+              relative z-10 px-2 py-1.5 xl:px-4 xl:py-2 text-md font-bold font-Mono text-bg cursor-pointer transition-colors duration-200 xl:text-lg
               ${isActive ? "" : "text-text"}
             `}
             >

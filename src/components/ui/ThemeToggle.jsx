@@ -27,11 +27,11 @@ export default function ThemeToggle() {
             aria-label={`Switch to ${themeOption} mode`}
             aria-pressed={isActive}
             className={`
-              relative z-10 px-3 py-2 font-bold font-Mono text-bg cursor-pointer transition-colors duration-200
+              relative z-10 px-2 py-2 xl:px-4 xl:py-2.5 font-bold font-Mono text-bg cursor-pointer transition-colors duration-200
               ${isActive ? "" : "text-text"}
             `}
           >
-            {themeOption === "dark" ? <FiMoon className="size-4 md:size-5" strokeWidth={3} /> : <FiSun className="size-4 md:size-5" strokeWidth={3} />}
+            {themeOption === "dark" ? <FiMoon className="size-5 xl:size-6" strokeWidth={3} /> : <FiSun className="size-5 xl:size-6" strokeWidth={3} />}
           </button>
         );
       })}
