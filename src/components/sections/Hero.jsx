@@ -53,8 +53,8 @@ export default function Hero() {
             </Button>
           </div>
         </div>
-        <div>
-          <Card></Card>
+        <div className='flex items-center justify-center'>
+          <Card className=''></Card>
         </div>
       </div>
     </section>
