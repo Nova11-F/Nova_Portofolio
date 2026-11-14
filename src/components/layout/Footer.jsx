@@ -4,19 +4,19 @@ export default function Footer(){
     const { t } = useLanguage();
 
     return(
-        <footer className="flex flex-col items-center justify-center bg-surface border-t-4 border-border p-4 md:p-8 gap-2 md:gap-4">
-            <h4 className="text-xl font-bold text-text font-Mono md:text-2xl">
+        <footer className="flex flex-col items-center justify-center bg-surface border-t-4 border-border p-2 xl:p-4 gap-2">
+            <h4 className="text-md font-bold text-text font-Mono xl:text-lg">
                 {t("footer.title")}
             </h4>
-            <p className="text-md font-medium text-muted font-Grotesk text-center md:text-lg">
+            <p className="text-xs font-medium text-muted font-Grotesk text-center xl:text-md">
                 {t("footer.desc")}
             </p>
-            <div className="flex items-center justify-center gap-2">
-            <p className="text-sm font-semibold text-text font-Grotesk uppercase md:text-md">
+            <div className="flex flex-col items-center justify-center gap-2 xl:flex-row">
+            <p className="text-xs font-semibold text-text font-Grotesk uppercase xl:text-sm">
                 {t("footer.info_univ")}
             </p>
-            <span className="bg-secondary rounded-full p-1.5"></span> 
-            <p className="text-sm font-semibold text-text font-Grotesk uppercase md:text-md">
+            <span className="hidden bg-secondary rounded-full p-1 xl:block"></span> 
+            <p className="text-xs font-semibold text-text font-Grotesk uppercase xl:text-sm">
                 {t("footer.info_prodi")}
             </p>
             </div>
