@@ -72,18 +72,18 @@ export default function Navbar() {
       `}
     >
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 xl:py-6 xl:mx-10 md:max-w-full">
-        <div className="flex items-center justify-center gap-4 xl:gap-6">
+        <div className="flex items-center justify-center gap-2 xl:gap-4">
           <Card
             padding="none"
-            className="flex items-center justify-center p-2 md:p-2.5"
+            className="flex items-center justify-center shadow-brutal-sm p-1.5 xl:shadow-brutal-md xl:p-2"
           >
             <CodeXml
               strokeWidth={3}
-              className="size-5 xl:size-8 text-secondary"
+              className="size-4 xl:size-7 text-secondary"
             />
           </Card>
 
-          <span className="font-bold font-mono text-xl text-text uppercase lg:text-2xl">
+          <span className="font-bold font-mono text-lg text-text uppercase lg:text-xl">
             Portofolio.Nova
           </span>
         </div>
@@ -91,13 +91,13 @@ export default function Navbar() {
         <Card
           padding="none"
           shadow="none"
-          className="hidden text-sm font-mono p-1 font-bold text-text uppercase xl:flex xl:items-center xl:justify-center xl:text-lg"
+          className="hidden text-sm font-mono p-1 font-bold text-text uppercase xl:flex xl:items-center xl:justify-center xl:text-md"
         >
           <div className="relative grid grid-cols-6">
             <div
               className="
                 absolute left-1 top-1 bottom-1
-                w-[calc((100%-8px)/6)]
+                w-[calc((100%-4px)/6)]
                 bg-secondary border-2 border-border
                 shadow-brutal-sm
                 transition-transform duration-300 ease-in-out
@@ -118,7 +118,7 @@ export default function Navbar() {
                   key={item.id}
                   href={`#${item.id}`}
                   className={`
-                    relative z-10 px-8 py-4 text-center
+                    relative z-10 px-2 py-3 text-center
                     transition-colors duration-300
                     ${isActive ? "text-surface" : "text-text"}
                   `}
@@ -136,7 +136,7 @@ export default function Navbar() {
 
           <Button
             size="none"
-            className="hidden text-text uppercase px-2 py-2 xl:px-4 xl:py-3 xl:block"
+            className="hidden text-text uppercase px-2 py-2.5 xl:block"
             onClick={() => window.open("/cv.pdf", "_blank")}
           >
             Resume CV
@@ -153,16 +153,16 @@ export default function Navbar() {
             aria-controls="mobile-navigation"
             className="
             group flex items-center justify-center
-            text-text px-4 py-3
+            text-text px-2.5 py-3
             transition-all duration-200
             hover:translate-[2px]
             xl:hidden
           "
           >
             {menuOpen ? (
-              <X className="size-5  group-hover:text-white" />
+              <X className="size-4 xl:size-7  group-hover:text-white" />
             ) : (
-              <Menu className="size-5  group-hover:text-white" />
+              <Menu className="size-4 xl:size-7  group-hover:text-white" />
             )}
           </Button>
         </div>
