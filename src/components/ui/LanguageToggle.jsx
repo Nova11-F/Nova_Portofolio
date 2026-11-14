@@ -7,7 +7,7 @@ export default function LanguageToggle() {
   const labels = ["id", "en"];
 
   return (
-    <Card padding="xs" className="relative flex items-center shadow-brutal-sm xl:shadow-brutal-md">
+    <Card padding="xs" className="relative flex items-center shadow-brutal-sm">
     <div
         className={`
           absolute left-1 top-1 bottom-1 w-[calc(50%-4px)] bg-secondary border-2 border-border transition-transform duration-300 ease-in-out

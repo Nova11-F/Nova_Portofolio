@@ -75,7 +75,7 @@ export default function Navbar() {
         <div className="flex items-center justify-center gap-2 xl:gap-4">
           <Card
             padding="none"
-            className="flex items-center justify-center shadow-brutal-sm p-1.5 xl:shadow-brutal-md xl:p-2"
+            className="flex items-center justify-center shadow-brutal-sm p-1.5 xl:p-2"
           >
             <CodeXml
               strokeWidth={3}
@@ -90,7 +90,7 @@ export default function Navbar() {
 
         <Card
           padding="none"
-          shadow="none"
+          shadow="soft"
           className="hidden text-sm font-mono p-1 font-bold text-text uppercase xl:flex xl:items-center xl:justify-center xl:text-md"
         >
           <div className="relative grid grid-cols-6">
@@ -118,7 +118,7 @@ export default function Navbar() {
                   key={item.id}
                   href={`#${item.id}`}
                   className={`
-                    relative z-10 px-2 py-3 text-center
+                    relative z-10 px-2 py-4 text-center
                     transition-colors duration-300
                     ${isActive ? "text-surface" : "text-text"}
                   `}
@@ -136,7 +136,7 @@ export default function Navbar() {
 
           <Button
             size="none"
-            className="hidden text-text uppercase px-2 py-2.5 xl:block"
+            className="hidden text-text uppercase px-2 py-2.5 xl:block xl:shadow-brutal-sm"
             onClick={() => window.open("/cv.pdf", "_blank")}
           >
             Resume CV
@@ -156,7 +156,7 @@ export default function Navbar() {
             text-text px-2.5 py-3
             transition-all duration-200
             hover:translate-[2px]
-            shadow-brutal-sm xl:shadow-brutal-md
+            shadow-brutal-sm 
             xl:hidden
           "
           >
@@ -193,7 +193,7 @@ export default function Navbar() {
                 href={`#${item.id}`}
                 onClick={() => setMenuOpen(false)}
                 className={`
-                flex items-center justify-between
+                flex items-center justify-between text-xs
                 border-2 border-border px-4 py-3
                 font-mono font-bold uppercase
                 transition-all duration-200
