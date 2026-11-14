@@ -156,6 +156,7 @@ export default function Navbar() {
             text-text px-2.5 py-3
             transition-all duration-200
             hover:translate-[2px]
+            shadow-brutal-sm xl:shadow-brutal-md
             xl:hidden
           "
           >

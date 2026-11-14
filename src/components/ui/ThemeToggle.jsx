@@ -6,7 +6,7 @@ export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <Card padding="xs" className="relative flex items-center">
+    <Card padding="xs" className="relative flex items-center shadow-brutal-sm xl:shadow-brutal-md">
       <div
         className={`
           absolute left-1 top-1 bottom-1 w-[calc(50%-4px)] bg-secondary border-2 border-border transition-transform duration-300 ease-in-out
@@ -27,11 +27,11 @@ export default function ThemeToggle() {
             aria-label={`Switch to ${themeOption} mode`}
             aria-pressed={isActive}
             className={`
-              relative z-10 px-2 py-2 xl:px-4 xl:py-2.5 font-bold font-Mono text-bg cursor-pointer transition-colors duration-200
+              relative z-10 px-2 py-2 xl:px-3 font-bold font-Mono text-bg cursor-pointer transition-colors duration-200
               ${isActive ? "" : "text-text"}
             `}
           >
-            {themeOption === "dark" ? <FiMoon className="size-5 xl:size-6" strokeWidth={3} /> : <FiSun className="size-5 xl:size-6" strokeWidth={3} />}
+            {themeOption === "dark" ? <FiMoon className="size-4 xl:size-6" /> : <FiSun className="size-4 xl:size-6" />}
           </button>
         );
       })}
