@@ -75,6 +75,7 @@ hero: {
     desc_orgaexpe:
       "Mengelola kegiatan olahraga, koordinasi program kerja, serta pengelolaan anggaran dan fasilitas organisasi.",
     period_orgaexpe: "Februari 2026 - Desember 2026",
+    quote: "Mengubah rasa ingin tahu menjadi kode, dan ide menjadi solusi yang bermakna.",
   },
   skill: {
     title: "Tingkat Kemahiran & Penguasaan Stack",

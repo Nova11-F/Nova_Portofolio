@@ -75,6 +75,7 @@ const en = {
     desc_orgaexpe:
       "Coordinating sports activities, organizing departmental programs, and managing organizational budgets and facilities.",
     period_orgaexpe: "February 2026 - December 2026",
+    quote: "Turning curiosity into code, and ideas into meaningful solutions.",
   },
   skill: {
     title: "Stack Skill & Mastery Level",
