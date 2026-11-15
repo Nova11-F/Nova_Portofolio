@@ -6,12 +6,12 @@ function Ribbon({ className = "", reverse = false }) {
     <Card
       shadow="soft"
       variant="accent"
-      className={`absolute left-[-10%] w-[120%]  h-20 xl:h-28 flex items-center overflow-hidden ${className}`}
+      className={`absolute left-[-10%] w-[120%]  h-16 xl:h-20 flex items-center overflow-hidden ${className}`}
     >
       <div
         className={`flex w-max items-center gap-5 ${reverse ? "marquee-reverse" : "marquee"}`}
       >
-        <div className="flex w-screen shrink-0 items-center justify-around gap-5">
+        <div className="flex xl:w-screen shrink-0 items-center justify-around gap-5">
           {techStack.map((tech) => {
             const Icon = tech.icon;
 
@@ -21,10 +21,10 @@ function Ribbon({ className = "", reverse = false }) {
                 className="flex shrink-0 items-center gap-2 lg:gap-4"
               >
                 <Icon
-                  className="size-5 xl:size-8"
+                  className="size-4 xl:size-6"
                   style={{ color: tech.color }}
                 />
-                <span className="text-sm xl:text-xl font-Mono font-semibold">
+                <span className="text-xs xl:text-md font-Mono font-semibold">
                   {tech.name}
                 </span>
               </div>
@@ -32,7 +32,7 @@ function Ribbon({ className = "", reverse = false }) {
           })}
         </div>
 
-        <div className="flex w-screen shrink-0 items-center justify-around gap-5">
+        <div className="flex w-max xl:w-screen shrink-0 items-center justify-around gap-5">
           {techStack.map((tech) => {
             const Icon = tech.icon;
 
@@ -42,10 +42,10 @@ function Ribbon({ className = "", reverse = false }) {
                 className="flex shrink-0 items-center gap-2 lg:gap-4"
               >
                 <Icon
-                  className="size-5 xl:size-8"
+                  className="size-4 xl:size-6"
                   style={{ color: tech.color }}
                 />
-                <span className="text-sm xl:text-xl font-Mono font-semibold">
+                <span className="text-xs xl:text-md font-Mono font-semibold">
                   {tech.name}
                 </span>
               </div>
@@ -59,7 +59,7 @@ function Ribbon({ className = "", reverse = false }) {
 
 export default function TechStack() {
   return (
-    <div className="relative w-full h-20 xl:h-28 overflow-hidden pointer-events-none">
+    <div className="relative w-full h-16 xl:h-20 overflow-hidden pointer-events-none">
       <Ribbon
         className="
           top-1/2 -translate-y-1/2

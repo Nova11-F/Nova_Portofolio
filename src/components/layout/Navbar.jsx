@@ -79,11 +79,11 @@ export default function Navbar() {
           >
             <CodeXml
               strokeWidth={3}
-              className="size-4 xl:size-7 text-secondary"
+              className="size-4 xl:size-6 text-secondary"
             />
           </Card>
 
-          <span className="font-bold font-mono text-lg text-text uppercase lg:text-xl">
+          <span className="font-bold font-mono text-md text-text uppercase">
             Portofolio.Nova
           </span>
         </div>
@@ -130,13 +130,13 @@ export default function Navbar() {
           </div>
         </Card>
 
-        <div className="flex items-center gap-2 xl:gap-4">
+        <div className="flex items-center gap-1 xl:gap-2">
           <LanguageToggle />
           <ThemeToggle />
 
           <Button
             size="none"
-            className="hidden text-text uppercase px-2 py-2.5 xl:block xl:shadow-brutal-sm"
+            className="hidden text-sm text-text uppercase px-2 py-2.5 xl:block xl:shadow-brutal-sm"
             onClick={() => window.open("/cv.pdf", "_blank")}
           >
             Resume CV
@@ -153,7 +153,7 @@ export default function Navbar() {
             aria-controls="mobile-navigation"
             className="
             group flex items-center justify-center
-            text-text px-2.5 py-3
+            text-text p-2.5
             transition-all duration-200
             hover:translate-[2px]
             shadow-brutal-sm 
@@ -161,9 +161,9 @@ export default function Navbar() {
           "
           >
             {menuOpen ? (
-              <X className="size-4 xl:size-7  group-hover:text-white" />
+              <X className="size-4   group-hover:text-white" />
             ) : (
-              <Menu className="size-4 xl:size-7  group-hover:text-white" />
+              <Menu className="size-4   group-hover:text-white" />
             )}
           </Button>
         </div>
