@@ -29,25 +29,27 @@ const id = {
     certificates: "Sertifikasi & Lisensi",
     contact: "Hubungi Saya",
   },
-hero: {
-  badge: "Mahasiswa Teknik Informatika",
-  headline_start: "Membangun Solusi Digital yang ",
-  headline_highlight: "Inovatif,",
-  headline_mid: " Fungsional &",
-  headline_end: "Berdampak.",
-  description:
-    "Saya adalah mahasiswa Teknik Informatika Universitas Negeri Surabaya yang berfokus pada pengembangan perangkat lunak, khususnya Full Stack Development. Menggabungkan fondasi teknis, pemecahan masalah, dan perhatian terhadap pengalaman pengguna untuk membangun solusi digital yang bermakna.",
-  projects: "Lihat Proyek Saya",
-  cv: "Lihat CV",
-  status: "Terbuka untuk Peluang",
-  profile: {
-    department: "Teknik Informatika",
-    university: "Universitas Negeri Surabaya",
-    semester: "Semester 5",
-    gpa: "IPK 3.82 / 4.00",
-    focus: "Software Engineering",
+  hero: {
+    badge: "Mahasiswa Teknik Informatika",
+    headline_start: "Membangun Solusi Digital yang ",
+    headline_highlight: "Inovatif,",
+    headline_mid: " Fungsional &",
+    headline_end: "Berdampak.",
+    description:
+      "Saya adalah mahasiswa Teknik Informatika Universitas Negeri Surabaya yang berfokus pada pengembangan perangkat lunak, khususnya Full Stack Development. Menggabungkan fondasi teknis, pemecahan masalah, dan perhatian terhadap pengalaman pengguna untuk membangun solusi digital yang bermakna.",
+    projects: "Lihat Proyek Saya",
+    cv: "Lihat CV",
+    status: "Terbuka untuk Peluang",
+    profile: {
+      department: "Teknik Informatika",
+      university: "Universitas Negeri Surabaya",
+      semester: "Semester 5",
+      gpa: "IPK 3.82 / 4.00",
+      focus: "Software Engineering",
+    },
+    command: "$ node bio.js --status=terbuka-untuk-kerja",
+    ready: "SIAP UNTUK BERKONTRIBUSI",
   },
-},
   about: {
     list: "Mahasiswa teknik Informatika",
     title_profile:
@@ -75,7 +77,8 @@ hero: {
     desc_orgaexpe:
       "Mengelola kegiatan olahraga, koordinasi program kerja, serta pengelolaan anggaran dan fasilitas organisasi.",
     period_orgaexpe: "Februari 2026 - Desember 2026",
-    quote: "Mengubah rasa ingin tahu menjadi kode, dan ide menjadi solusi yang bermakna.",
+    quote:
+      "Mengubah rasa ingin tahu menjadi kode, dan ide menjadi solusi yang bermakna.",
   },
   skill: {
     title: "Tingkat Kemahiran & Penguasaan Stack",
@@ -118,14 +121,14 @@ hero: {
     download: "Unduh Sertifikat",
   },
   contact: {
-    username:"Nova-11F",
+    username: "Nova-11F",
     title: "Mari Bangun Sesuatu yang Hebat",
     available: "Tersedia 2027 / 2028",
 
     collaboration: "Terbuka untuk Kolaborasi",
     headline_start: "Mari Wujudkan",
     headline_idea: "IDE ANDA",
-    headline_mid:"Menjadi",
+    headline_mid: "Menjadi",
     headline_end: "Sesuatu yang Hebat.",
 
     description:

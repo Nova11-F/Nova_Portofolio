@@ -47,6 +47,8 @@ const en = {
       gpa: "IPK 3.82 / 4.00",
       focus: "Software Engineering",
     },
+    command: "$ node bio.js --status=open-to-work",
+    ready: "READY FOR DEPLOYMENT",
   },
   about: {
     list: "INFORMATICS ENGINEERING STUDENT",

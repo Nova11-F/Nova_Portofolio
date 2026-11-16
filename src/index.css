@@ -21,6 +21,7 @@ html {
 :root {
   --bg: #f1f5f9;
   --bg-section: #e0e3e5;
+  --bg-muted: #c2c6da;
   --surface: #ffffff;
   --text: #111827;
   --text-muted: #444749;
@@ -37,6 +38,7 @@ html {
 .dark {
   --bg: #0a0f1d;
   --bg-section: #0f172a;
+  --bg-muted: #161b2a;
   --surface: #161b2a;
   --text: #ffffff;
   --text-muted: #c2c6da;
@@ -57,6 +59,7 @@ html {
   --color-border: var(--border);
   --color-text: var(--text);
   --color-muted: var(--text-muted);
+  --color-bg-muted :var(--bg-muted);
   --color-text-list: var(--text-list);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
