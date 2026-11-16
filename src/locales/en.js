@@ -79,6 +79,27 @@ const en = {
     period_orgaexpe: "February 2026 - December 2026",
     quote: "Turning curiosity into code, and ideas into meaningful solutions.",
   },
+  projects: {
+    desc: "A collection of projects that reflect my journey, creativity, and practical skills in building functional and meaningful digital solutions.",
+    supplies: {
+      desc: "A web-based information system designed to streamline inventory, supplier, customer, and purchase transaction management through an integrated, efficient, and secure platform.",
+    },
+    nutriva: {
+  desc: "A digital health platform that helps parents plan children's nutrition, track dietary intake and growth, and receive personalized nutritional recommendations through an AI-powered assistant.",
+},
+    biometrik:{
+      desc: "A Retina Biometric Identification System developed using Python and Digital Image Processing techniques to identify individuals through retinal blood vessel patterns.",
+    },
+    coffesui:{
+      desc: "An interactive point-of-sale (POS) application for coffee shops that streamlines order management, calculates payment totals, and processes transactions quickly directly from the browser.",
+    },
+    bumiBaik:{
+      desc: "A sustainable e-commerce platform that enables users to purchase eco-friendly products while tracking their positive environmental impact in real time.",
+    },
+    portfolio:{
+      desc:"A personal portfolio website designed to showcase profiles, skills, experiences, and projects through a modern, responsive, and interactive interface."
+    }
+  },
   skill: {
     title: "Stack Skill & Mastery Level",
     text: "Self-evaluation metrics based on accumulated experience in production project implementation, academic research, and periodic testing.",

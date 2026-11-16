@@ -1,3 +1,5 @@
+import { desc } from "framer-motion/client";
+
 const id = {
   nav: {
     about: "Tentang",
@@ -79,6 +81,27 @@ const id = {
     period_orgaexpe: "Februari 2026 - Desember 2026",
     quote:
       "Mengubah rasa ingin tahu menjadi kode, dan ide menjadi solusi yang bermakna.",
+  },
+  projects: {
+    desc: "Kumpulan karya dan proyek yang merepresentasikan perjalanan, kreativitas, serta penerapan keterampilan saya dalam membangun solusi digital yang fungsional dan bermakna.",
+    supplies: {
+      desc: "Sistem informasi berbasis web yang dirancang untuk membantu proses pengelolaan persediaan (inventory), supplier, customer, dan transaksi pembelian secara terintegrasi, efisien, dan aman.",
+    },
+    nutriva: {
+      desc: "Platform kesehatan digital yang membantu orang tua merencanakan nutrisi anak, memantau asupan gizi dan pertumbuhan, serta memperoleh rekomendasi nutrisi yang dipersonalisasi melalui asisten AI.",
+    },
+    biometrik: {
+      desc: "Sistem Identifikasi Biometrik Retina merupakan aplikasi berbasis Python yang memanfaatkan Digital Image Processing untuk mengenali identitas seseorang melalui pola pembuluh darah retina.",
+    },
+    coffesui: {
+      desc: "Aplikasi kasir interaktif untuk coffee shop yang membantu mengelola pesanan, menghitung total pembayaran, dan memproses transaksi secara cepat langsung dari browser.",
+    },
+    bumiBaik: {
+      desc: "Platform e-commerce berkelanjutan yang membantu pengguna membeli produk ramah lingkungan sekaligus melacak dampak positif terhadap pelestarian bumi secara real-time.",
+    },
+    portfolio:{
+      desc:"Website portofolio pribadi yang dirancang untuk menampilkan profil, keterampilan, pengalaman, dan proyek melalui antarmuka modern, responsif, serta interaktif."
+    }
   },
   skill: {
     title: "Tingkat Kemahiran & Penguasaan Stack",

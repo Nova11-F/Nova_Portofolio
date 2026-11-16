@@ -4,6 +4,7 @@ import { useLanguage } from "../../context/LanguageContext";
 import SectionHeader from "../ui/SectionHeader";
 import { FolderOpen, ArrowRight } from "lucide-react";
 import { BsGithub } from "react-icons/bs";
+import projects from "../../data/projects";
 
 export default function Project() {
   const { t } = useLanguage();
@@ -15,53 +16,95 @@ export default function Project() {
     >
       <SectionHeader number="02" section="project" label="project" />
       <div className="flex flex-col gap-4">
-        <div>
-          <Button></Button>
+        <div className="flex items-center justify-center">
+          <h4 className="text-xs font-bold text-text font-Mono text-center max-w-4xl xl:text-md">
+            {t("projects.desc")}
+          </h4>
         </div>
         <div className="grid grid-cols-1 gap-4 items-stretch xl:grid-cols-3">
-          <Card 
-          padding="none"
-          className="flex flex-col gap-2">
-            <div className="relative h-40">
-              <Card 
-              padding="none"
-              shadow="soft"
-              className="absolute top-1 left-2 text-[10px] font-bold font-Mono uppercase px-4 py-2 xl:text-sm">sjkndjkasn</Card>
-              <Card 
-              variant="secondary"
-              shadow="soft"
-              className="absolute top-1 right-2 text-[10px] font-bold font-Mono uppercase px-4 py-2 xl:text-sm">sjdbas</Card>
-              <img></img>
-            </div>
-            <div className="flex flex-col gap-4 pb-4 border-b-3 border-border px-4 xl:px-6"> 
-            <div >
-              <h3 className="text-md font-bold text-text font-Grotesk xl:text-lg">sjdnaskdn</h3>
-              <p className="text-xs font-medium text-muted font-Grotesk wrap-break-word xl:text-sm">skdmaskljsabdksabdksakhdksadkashkldsalksajkdsandkjsandnsajkndkjsandjknsandsandnasdnsandlsad</p>
-            </div>
-            <div className="grid grid-cols-3 gap-2">
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-            </div>
-            </div>
-            <div>
-              <div className="flex items-center justify-between px-4 pb-2 xl:pb-4">
-                <div></div>
-                <Button 
-                size="none"
-                shadow="soft"
-                variant="surface"
-                className="group flex items-center justify-center gap-2 px-4 py-2 xl:py-3">
-                  <BsGithub className="size-4"/>
-                  <p className="text-[10px] group-hover:text-white xl:text-xs">Github Repo</p>
-                </Button>
-              </div>
-            </div>
-          </Card>
-          <Card></Card>
-          <Card></Card>
+          {projects.map((project) => {
+            return (
+              <Card
+                key={project.id}
+                padding="none"
+                className="flex flex-col h-full gap-2"
+              >
+                <div className="relative h-60 border-b-3 border-border overflow-hidden">
+                  <Card
+                    padding="none"
+                    shadow="soft"
+                    className="absolute bottom-1 left-2 text-[10px] font-bold font-Mono uppercase px-4 py-1 xl:text-sm"
+                  >
+                    {project.title}
+                  </Card>
+                  <Card
+                    variant="secondary"
+                    shadow="soft"
+                    className="absolute bottom-1 right-2 text-[10px] font-bold font-Mono uppercase px-4 py-1 xl:text-sm"
+                  >
+                    {project.type}
+                  </Card>
+                  <img
+                    src={project.img}
+                    alt={project.name}
+                    loading="lazy"
+                    className="object-center"
+                  ></img>
+                </div>
+                <div className="flex flex-col flex-1 gap-4 pb-4 border-b-3 border-border px-4 xl:px-6">
+                  <div className="py-2 flex flex-col gap-2">
+                    <h3 className="text-md font-bold text-text font-Grotesk uppercase xl:text-lg">
+                      {project.name}
+                    </h3>
+
+                    <p className="text-xs font-medium text-muted font-Grotesk tracking-wider wrap-normal xl:text-sm">
+                      {t(project.desc)}
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-3 gap-2">
+                    {project.tech.map((item, index) => {
+                      const Icon = item.icon;
+
+                      return (
+                        <Card
+                          key={index}
+                          padding="none"
+                          shadow="soft"
+                          className="flex items-center justify-center p-2 gap-2"
+                        >
+                          <Icon
+                            className="size-4"
+                            style={{ color: item.color }}
+                          />
+
+                          <p className="text-[10px] font-bold text-text font-Mono uppercase">
+                            {item.name}
+                          </p>
+                        </Card>
+                      );
+                    })}
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <div className="flex items-center justify-end px-4 pb-2 xl:pb-4">
+                    <Button
+                      size="none"
+                      shadow="soft"
+                      variant="surface"
+                      className="group flex items-center justify-center gap-2 px-4 py-2 xl:py-3"
+                    >
+                      <BsGithub className="size-4" />
+
+                      <p className="text-[10px] group-hover:text-white xl:text-xs">
+                        Github Repo
+                      </p>
+                    </Button>
+                  </div>
+                </div>
+              </Card>
+            );
+          })}
         </div>
         <Card
           shadow="soft"
