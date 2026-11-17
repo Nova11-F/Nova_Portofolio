@@ -5,6 +5,9 @@ import techStack from "../../data/techStack";
 
 export default function Skill() {
   const { t } = useLanguage();
+  const selectedTech = techStack.filter((item) =>
+  ["HTML","PHP","CSS","MySQL","Python","React", "JavaScript", "Tailwind CSS"].includes(item.name)
+);
 
   return (
     <section
@@ -21,7 +24,7 @@ export default function Skill() {
         </p>
       </div>
       <div className="grid grid-cols-2 xl:grid-cols-4 gap-4">
-        {techStack.map((tech) => {
+        {selectedTech.map((tech) => {
           const Icon = tech.icon;
 
           return (

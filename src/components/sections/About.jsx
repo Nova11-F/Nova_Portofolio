@@ -2,6 +2,7 @@ import Card from "../ui/Card";
 import SectionHeader from "../ui/SectionHeader";
 import { useLanguage } from "../../context/LanguageContext";
 import { Code2, BriefcaseBusiness, Users } from "lucide-react";
+import poto from "../../assets/images/pp.png"
 
 export default function About() {
   const { t } = useLanguage();
@@ -28,7 +29,14 @@ export default function About() {
             {t("about.title_profile")}
           </h4>
           <div className="grid grid-cols-2 items-center gap-4 border-b-4 border-border pb-8 md:grid-cols-[minmax(180px,0.8fr)_minmax(0,2fr)] lg:grid-cols-[minmax(220px,1fr)_minmax(0,2fr)] xl:grid-cols-[220px_minmax(0,1fr)] xl:gap-8">
-            <Card className="relative mx-auto flex aspect-square w-full max-w-60 items-center justify-center xl:max-w-none">
+            <Card 
+            padding="sm"
+            className="relative mx-auto flex aspect-square w-full max-w-60 items-center justify-center xl:max-w-none">
+              <img
+              src={poto}
+              alt="foto portfolio"
+              loading="lazy"
+              className="object-center h-full w-full"></img>
               <Card
               shadow="soft"
                 padding="sm"

@@ -33,7 +33,7 @@ export default function Project() {
                   <Card
                     padding="none"
                     shadow="soft"
-                    className="absolute bottom-1 left-2 text-[10px] font-bold font-Mono uppercase px-4 py-1 xl:text-sm"
+                    className="absolute bottom-1 left-2 text-[10px] font-bold text-text font-Mono uppercase px-4 py-1 xl:text-sm"
                   >
                     {project.title}
                   </Card>
@@ -63,12 +63,12 @@ export default function Project() {
                   </div>
 
                   <div className="grid grid-cols-3 gap-2">
-                    {project.tech.map((item, index) => {
+                    {project.tech.map((item) => {
                       const Icon = item.icon;
 
                       return (
                         <Card
-                          key={index}
+                          key={item}
                           padding="none"
                           shadow="soft"
                           className="flex items-center justify-center p-2 gap-2"

@@ -137,7 +137,13 @@ export default function Navbar() {
           <Button
             size="none"
             className="hidden text-sm text-text uppercase px-2 py-2.5 xl:block xl:shadow-brutal-sm"
-            onClick={() => window.open("/cv.pdf", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1JDHnBEI9sVSZHCczJT_NCMdTi5WiHZa-/view?usp=drive_link",
+                "_blank",
+                "noopener,noreferrer",
+              )
+            }
           >
             Resume CV
           </Button>
