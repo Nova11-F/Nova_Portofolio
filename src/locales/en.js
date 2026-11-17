@@ -85,20 +85,24 @@ const en = {
       desc: "A web-based information system designed to streamline inventory, supplier, customer, and purchase transaction management through an integrated, efficient, and secure platform.",
     },
     nutriva: {
-  desc: "A digital health platform that helps parents plan children's nutrition, track dietary intake and growth, and receive personalized nutritional recommendations through an AI-powered assistant.",
-},
-    biometrik:{
+      desc: "A digital health platform that helps parents plan children's nutrition, track dietary intake and growth, and receive personalized nutritional recommendations through an AI-powered assistant.",
+    },
+    biometrik: {
       desc: "A Retina Biometric Identification System developed using Python and Digital Image Processing techniques to identify individuals through retinal blood vessel patterns.",
     },
-    coffesui:{
+    coffesui: {
       desc: "An interactive point-of-sale (POS) application for coffee shops that streamlines order management, calculates payment totals, and processes transactions quickly directly from the browser.",
     },
-    bumiBaik:{
+    bumiBaik: {
       desc: "A sustainable e-commerce platform that enables users to purchase eco-friendly products while tracking their positive environmental impact in real time.",
     },
-    portfolio:{
-      desc:"A personal portfolio website designed to showcase profiles, skills, experiences, and projects through a modern, responsive, and interactive interface."
-    }
+    portfolio: {
+      desc: "A personal portfolio website designed to showcase profiles, skills, experiences, and projects through a modern, responsive, and interactive interface.",
+    },
+    moreProjects: "Want to explore 6+ more projects?",
+    moreProjectsDesc:
+      "From mini compilers and pathfinding algorithm visualizers to mobile design explorations.",
+    githubProfile: "VISIT GITHUB PROFILE",
   },
   skill: {
     title: "Stack Skill & Mastery Level",

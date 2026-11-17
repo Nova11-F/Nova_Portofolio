@@ -21,7 +21,7 @@ const projects = [
     {
         id :"1",
         name :"supplies",
-        title:"Projek #1",
+        title:"Project #1",
         type: "Supply Management System",
         img: suppliesImg,
         desc :"projects.supplies.desc",
@@ -42,11 +42,12 @@ const projects = [
                 name: "MySQL", icon: SiMysql, color: "#336791"
             }
         ],
+        url:"https://github.com/Nova11-F/Supplies",
     },
     {
         id :"2",
         name :"Nutriva",
-        title:"Projek #2",
+        title:"Project #2",
         type: "HealthTech",
         img: nutrivaImg,
         desc :"projects.nutriva.desc",
@@ -64,11 +65,12 @@ const projects = [
                 name: "React", icon: SiReact, color: "#61DAFB"
             },
         ],
+        url:"https://github.com/Nova11-F/Nutriva"
     },
     {
         id :"3",
         name :"Sistem Identifikasi Biometrik Retina",
-        title:"Projek #3",
+        title:"Project #3",
         type: "Biometric Image Processing",
         img: biometrikImg,
         desc :"projects.biometrik.desc",
@@ -77,11 +79,12 @@ const projects = [
                 name: "Python", icon: SiPython, color: "#3776AB"
             },
         ],
+        url:"https://github.com/Nova11-F/coffeesui-cashier",
     },
     {
         id :"4",
         name :"COFFEESUI CASHIER",
-        title:"Projek #4",
+        title:"Project #4",
         type: "Point of Sale (POS)",
         img: coffesuiImg,
         desc :"projects.coffesui.desc",
@@ -100,7 +103,7 @@ const projects = [
     {
         id :"5",
         name :"BUMI BAIK",
-        title:"Projek #5",
+        title:"Project #5",
         type: "Sustainable E-Commerce",
         img: bumibaikImg,
         desc :"projects.bumiBaik.desc",
@@ -121,11 +124,12 @@ const projects = [
                 name: "Next.JS", icon: SiNextdotjs, color: "#000000"
             }
         ],
+        url: "https://github.com/Nova11-F/Bumi_Baik",
     },
     {
         id :"6",
         name :"Portfolio",
-        title:"Projek #6",
+        title:"Project #6",
         type: "Portfolio",
         img: suppliesImg,
         desc :"projects.portfolio.desc",
@@ -143,6 +147,7 @@ const projects = [
                 name: "React", icon: SiReact, color: "#61DAFB"
             },
         ],
+        url:"https://github.com/Nova11-F/Nova_Portofolio",
     },
 ]
 

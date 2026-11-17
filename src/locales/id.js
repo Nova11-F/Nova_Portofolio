@@ -1,5 +1,3 @@
-import { desc } from "framer-motion/client";
-
 const id = {
   nav: {
     about: "Tentang",
@@ -99,9 +97,13 @@ const id = {
     bumiBaik: {
       desc: "Platform e-commerce berkelanjutan yang membantu pengguna membeli produk ramah lingkungan sekaligus melacak dampak positif terhadap pelestarian bumi secara real-time.",
     },
-    portfolio:{
-      desc:"Website portofolio pribadi yang dirancang untuk menampilkan profil, keterampilan, pengalaman, dan proyek melalui antarmuka modern, responsif, serta interaktif."
-    }
+    portfolio: {
+      desc: "Website portofolio pribadi yang dirancang untuk menampilkan profil, keterampilan, pengalaman, dan proyek melalui antarmuka modern, responsif, serta interaktif.",
+    },
+    moreProjects: "Ingin melihat 6+ proyek lainnya?",
+    moreProjectsDesc:
+      "Mulai dari compiler mini, visualizer algoritma pathfinding, hingga eksplorasi desain mobile.",
+    githubProfile: "KUNJUNGI PROFIL GITHUB",
   },
   skill: {
     title: "Tingkat Kemahiran & Penguasaan Stack",

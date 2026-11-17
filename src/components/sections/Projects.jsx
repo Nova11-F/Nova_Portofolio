@@ -89,10 +89,18 @@ export default function Project() {
                 <div className="mt-auto">
                   <div className="flex items-center justify-end px-4 pb-2 xl:pb-4">
                     <Button
+                      key={project.id}
                       size="none"
                       shadow="soft"
                       variant="surface"
                       className="group flex items-center justify-center gap-2 px-4 py-2 xl:py-3"
+                      onClick={() =>
+                        window.open(
+                          project.url,
+                          "_blank",
+                          "noopener,noreferrer",
+                        )
+                      }
                     >
                       <BsGithub className="size-4" />
 
@@ -121,11 +129,10 @@ export default function Project() {
             </Card>
             <div className="flex flex-col gap-0.5 xl:gap-1">
               <h4 className="text-sm xl:text-md font-bold text-text font-Mono xl:tracking-wide">
-                Ingin melihat 12+ eksperimen kampus lainnya?
+                {t("projects.moreProjects")}
               </h4>
               <p className="text-[10px] xl:text-xs font-medium text-muted font-Grotesk">
-                Mulai dari compiler mini, visualizer algoritma pathfinding,
-                hingga eksplorasi desain mobile.
+                {t("projects.moreProjectsDesc")}
               </p>
             </div>
           </div>
@@ -133,8 +140,15 @@ export default function Project() {
             shadow="soft"
             size="none"
             className="flex items-center justify-center text-[10px] w-full py-1.5 gap-2 xl:w-fit xl:text-sm xl:px-4 xl:py-1.5"
+            onClick={() =>
+              window.open(
+                "https://github.com/Nova11-F",
+                "_blank",
+                "noopener,noreferrer",
+              )
+            }
           >
-            KUNJUNGI PROFIL GITHUB
+            {t("projects.githubProfile")}
             <ArrowRight className="size-4 xl:size-5" />
           </Button>
         </Card>
