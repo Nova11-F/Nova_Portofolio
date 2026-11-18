@@ -19,14 +19,18 @@ export default function Project() {
       <SectionHeader number="02" section="project" label="project" />
       </Reveal>
       <div className="flex flex-col gap-4">
+      <Reveal delay={0.2} variant="slide-right">
         <div className="flex items-center justify-center">
           <h4 className="text-xs font-bold text-text font-Mono text-center max-w-4xl xl:text-md">
             {t("projects.desc")}
           </h4>
         </div>
+      </Reveal>
         <div className="grid grid-cols-1 gap-4 items-stretch xl:grid-cols-3">
-          {projects.map((project) => {
+          {projects.map((project, i) => {
+            
             return (
+              <Reveal delay={i * 0.15}>  
               <Card
                 key={project.id}
                 padding="none"
@@ -85,6 +89,7 @@ export default function Project() {
                             {item.name}
                           </p>
                         </Card>
+                        
                       );
                     })}
                   </div>
@@ -114,9 +119,11 @@ export default function Project() {
                   </div>
                 </div>
               </Card>
+              </Reveal>
             );
           })}
         </div>
+        <Reveal variant="slide-right" delay={0.3} duration={0.5}>
         <Card
           shadow="soft"
           padding="none"
@@ -155,6 +162,7 @@ export default function Project() {
             <ArrowRight className="size-4 xl:size-5" />
           </Button>
         </Card>
+        </Reveal>
       </div>
     </section>
   );
