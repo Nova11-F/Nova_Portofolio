@@ -16,6 +16,7 @@ import {
   Share2,
 } from "lucide-react";
 import socials from "../../data/socials";
+import Reveal from "../Reveal";
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -47,8 +48,12 @@ export default function Contact() {
       id="contact"
       className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-6 px-4 xl:px-10 md:max-w-full bg-bg py-6 xl:py-10 scroll-mt-[80px] xl:scroll-mt-[90px]"
     >
+      <Reveal variant="slide-right">
       <SectionHeader number="06" section="contact" label="contact" />
+      </Reveal>
+      <Reveal>
       <Card className="flex flex-col gap-4 p-4 xl:gap-6 xl:p-8">
+        <Reveal variant="slide-right" delay={0.2}>
         <div className="flex items-center justify-between border-b-4 border-border pb-4">
           <div className="flex items-center justify-center gap-2 md:gap-4">
             <span className="bg-tertiary rounded-full p-1.5 md:p-2"></span>
@@ -64,8 +69,10 @@ export default function Contact() {
             {t("contact.available")}
           </Card>
         </div>
+        </Reveal>
         <div className="flex items-center justify-between">
           <div className="relative flex flex-col gap-4 xl:gap-6">
+            <Reveal variant="slide-right" delay={0.2}>
             <Card
               variant="secondary"
               shadow="soft"
@@ -76,7 +83,9 @@ export default function Contact() {
                 {t("contact.title")}
               </p>
             </Card>
-            <h3 className="text-3xl font-bold text-text font-Mono uppercase leading-normal xl:leading-none xl:text-4xl">
+            </Reveal>
+            <Reveal variant="slide-right" delay={0.3}>
+            <h3 className="text-3xl font-bold text-text font-Mono uppercase leading-normal xl:leading-none mb-4 xl:text-4xl">
               {t("contact.headline_start")}{" "}
               <span className="text-white bg-secondary border-br-3 border-border shadow-brutal-md px-2 md:px-4">
                 {t("contact.headline_idea")}
@@ -89,6 +98,8 @@ export default function Contact() {
             <p className="text-xs font-semibold text-muted font-Grotesk tracking-wider md:max-w-6xl xl:text-lg">
               {t("contact.description")}
             </p>
+            </Reveal>
+            <Reveal variant="slide-right" delay={0.2}>
             <Card
               variant="secondary_rev"
               shadow="soft"
@@ -99,9 +110,11 @@ export default function Contact() {
                 {t("contact.open_ideas")}
               </p>
             </Card>
+            </Reveal>
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 items-stretch gap-4">
+          <Reveal delay={0} duration={0.5}>
           <Card className="flex flex-col gap-2 p-4 lg:gap-4 lg:p-6">
             <div className="flex items-center justify-between">
               <h4 className="text-md font-semibold text-secondary font-Mono uppercase xl:text-lg">
@@ -138,6 +151,8 @@ export default function Contact() {
               </Button>
             </div>
           </Card>
+          </Reveal>
+          <Reveal delay={0.15} duration={0.5}>
           <Card className="flex flex-col gap-2 p-4 xl:gap-4 xl:p-6">
             <div className="flex items-center justify-between">
               <h4 className="text-md font-semibold text-tertiary font-Mono uppercase xl:text-lg">
@@ -166,6 +181,8 @@ export default function Contact() {
               </Button>
             </div>
           </Card>
+          </Reveal>
+          <Reveal delay={0.30} duration={0.5}>
           <Card className="flex flex-col gap-2 p-4 xl:gap-4 xl:p-6">
             <div className="flex items-center justify-between">
               <h4 className="text-md font-semibold text-secondary font-Mono uppercase xl:text-lg">
@@ -188,6 +205,8 @@ export default function Contact() {
               </p>
             </div>
           </Card>
+          </Reveal>
+          <Reveal delay={0.45} duration={0.5}>
           <Card className="flex flex-col gap-2 p-4 lg:gap-4 xl:p-6">
             <div className="flex items-center justify-between">
               <h4 className="text-md font-semibold text-tertiary font-Mono uppercase xl:text-lg">
@@ -214,7 +233,9 @@ export default function Contact() {
               </Card>
             </div>
           </Card>
+          </Reveal>
         </div>
+        <Reveal variant="slide-right" delay={0.2}>
         <Card 
         className="flex flex-col items-center justify-between  gap-4 xl:flex-row">
           <div className="flex items-center justify-around gap-4">
@@ -251,7 +272,9 @@ export default function Contact() {
             })}
           </div>
         </Card>
+        </Reveal>
       </Card>
+      </Reveal>
     </section>
   );
 }
