@@ -5,6 +5,7 @@ import SectionHeader from "../ui/SectionHeader";
 import { FolderOpen, ArrowRight } from "lucide-react";
 import { BsGithub } from "react-icons/bs";
 import projects from "../../data/projects";
+import Reveal from "../Reveal";
 
 export default function Project() {
   const { t } = useLanguage();
@@ -14,7 +15,9 @@ export default function Project() {
       id="projects"
       className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-6 px-4 xl:px-10 md:max-w-full bg-bg py-6 xl:py-10 scroll-mt-[80px] xl:scroll-mt-[90px]"
     >
+      <Reveal variant="slide-right">
       <SectionHeader number="02" section="project" label="project" />
+      </Reveal>
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-center">
           <h4 className="text-xs font-bold text-text font-Mono text-center max-w-4xl xl:text-md">
