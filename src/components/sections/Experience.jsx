@@ -4,6 +4,7 @@ import { useLanguage } from "../../context/LanguageContext";
 import SectionHeader from "../ui/SectionHeader";
 import Button from "../ui/Button";
 import experience from "../../data/experience";
+import Reveal from "../Reveal";
 
 export default function Experience() {
   const { t } = useLanguage();
@@ -16,10 +17,13 @@ export default function Experience() {
       id="experience"
       className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-6 px-4 xl:px-10 md:max-w-full bg-bg py-6 xl:py-10 scroll-mt-[80px] xl:scroll-mt-[90px]"
     >
-      <SectionHeader number="04" section="experience" label="experience" />
-
+      <Reveal variant="slide-right">
+        <SectionHeader number="04" section="experience" label="experience" />
+      </Reveal>
       <div className="flex flex-wrap items-center justify-start gap-2 xl:gap-4">
-        {experience.map((section) => (
+        {experience.map((section, i) => (
+          
+          <Reveal variant="slide-right" delay={i * 0.15} duration={0.5}>
           <Button
             size="none"
             key={section.id}
@@ -36,11 +40,14 @@ export default function Experience() {
               {section.detail.length}
             </span>
           </Button>
+          </Reveal>
         ))}
       </div>
 
       <div className="grid grid-cols-1 gap-4">
         {activeExperience.detail.map((item, index) => (
+
+          <Reveal variant="slide-right" delay={index * 0.15} duration={0.5}>
           <Card
             key={`${activeTab}-${index}`}
             className="flex flex-col gap-2 p-4 xl:flex-row xl:items-center xl:justify-start xl:gap-6 xl:p-6"
@@ -69,6 +76,7 @@ export default function Experience() {
               </p>
             </div>
           </Card>
+          </Reveal>
         ))}
       </div>
     </section>
