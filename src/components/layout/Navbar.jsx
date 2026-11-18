@@ -6,7 +6,6 @@ import Button from "../ui/Button";
 import Card from "../ui/Card";
 import { useState, useEffect } from "react";
 import Reveal from "../Reveal";
-import logo from "../../../public/logo.webp"
 
 const navItems = [
   { id: "about", label: "about" },
@@ -77,10 +76,10 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 xl:py-6 xl:mx-10 md:max-w-full">
         <div className="flex items-center justify-center gap-1 xl:gap-2">
         <img
-        src={logo}
+        src="/logo.webp"
         alt="logo"
         loading="lazy"
-        className="h-10 xl:h-15"/>
+        className="h-10 xl:h-15 object-contain"/>
 
           <span className="font-bold font-mono text-md text-text uppercase">
             Portofolio.Nova
