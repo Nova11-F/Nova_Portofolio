@@ -17,7 +17,7 @@ export default function Hero() {
       id="hero"
       className="relative flex flex-col mx-auto max-w-5xl gap-4 xl:gap-6 px-4 xl:px-10 md:max-w-full bg-bg py-6 xl:py-12 scroll-mt-[80px] xl:scroll-mt-[90px]"
     >
-      <div className="grid grid-cols-1 items-center gap-6 xl:gap-10 xl:grid-cols-[minmax(0,1fr)_500px]">
+      <div className="grid grid-cols-1 items-center gap-6 xl:gap-10 lg:grid-cols-[minmax(0,1fr)_500px]">
         <div className="flex flex-col min-w-0 gap-2 xl:gap-6">
           <Reveal variant="slide-right" delay={0.1}>
           <Card

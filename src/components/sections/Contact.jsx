@@ -115,7 +115,7 @@ export default function Contact() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 items-stretch gap-4">
           <Reveal delay={0} duration={0.5}>
-          <Card className="flex flex-col gap-2 p-4 lg:gap-4 lg:p-6">
+          <Card className="flex flex-col gap-2 h-full p-4 lg:gap-4 xl:p-6">
             <div className="flex items-center justify-between">
               <h4 className="text-md font-semibold text-secondary font-Mono uppercase xl:text-lg">
                 {t(email.title)}
@@ -153,7 +153,7 @@ export default function Contact() {
           </Card>
           </Reveal>
           <Reveal delay={0.15} duration={0.5}>
-          <Card className="flex flex-col gap-2 p-4 xl:gap-4 xl:p-6">
+          <Card className="flex flex-col gap-2 h-full p-4 lg:gap-4 xl:p-6">
             <div className="flex items-center justify-between">
               <h4 className="text-md font-semibold text-tertiary font-Mono uppercase xl:text-lg">
                 {t(whatsapp.title)}
@@ -183,7 +183,7 @@ export default function Contact() {
           </Card>
           </Reveal>
           <Reveal delay={0.30} duration={0.5}>
-          <Card className="flex flex-col gap-2 p-4 xl:gap-4 xl:p-6">
+          <Card className="flex flex-col gap-2 h-full p-4 lg:gap-4 xl:p-6">
             <div className="flex items-center justify-between">
               <h4 className="text-md font-semibold text-secondary font-Mono uppercase xl:text-lg">
                 {t(location.title)}
@@ -207,7 +207,7 @@ export default function Contact() {
           </Card>
           </Reveal>
           <Reveal delay={0.45} duration={0.5}>
-          <Card className="flex flex-col gap-2 p-4 lg:gap-4 xl:p-6">
+          <Card className="flex flex-col gap-2 h-full p-4 lg:gap-4 xl:p-6">
             <div className="flex items-center justify-between">
               <h4 className="text-md font-semibold text-tertiary font-Mono uppercase xl:text-lg">
                 {t(internship.title)}

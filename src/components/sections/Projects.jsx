@@ -26,7 +26,7 @@ export default function Project() {
           </h4>
         </div>
       </Reveal>
-        <div className="grid grid-cols-1 gap-4 items-stretch xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 items-stretch lg:grid-cols-2 xl:grid-cols-3">
           {projects.map((project, i) => {
             
             return (

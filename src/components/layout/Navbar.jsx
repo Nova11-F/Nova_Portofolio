@@ -73,13 +73,13 @@ export default function Navbar() {
       `}
     >
       <Reveal variant="slide-down" delay={0.1} duration={0.6}>
-      <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 xl:py-6 xl:mx-10 md:max-w-full">
+      <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 xl:mx-10 md:max-w-full">
         <div className="flex items-center justify-center gap-1 xl:gap-2">
         <img
         src="/logo.webp"
         alt="logo"
         loading="lazy"
-        className="h-10 xl:h-15 object-contain"/>
+        className="h-10 xl:h-14 object-contain"/>
 
           <span className="font-bold font-mono text-md text-text uppercase">
             Portofolio.Nova
@@ -89,13 +89,13 @@ export default function Navbar() {
         <Card
           padding="none"
           shadow="soft"
-          className="hidden text-sm font-mono p-1 font-bold text-text uppercase xl:flex xl:items-center xl:justify-center xl:text-md"
+          className="hidden text-sm font-mono px-1 py-0.5 font-bold text-text uppercase xl:flex xl:items-center xl:justify-center xl:text-md"
         >
           <div className="relative grid grid-cols-6">
             <div
               className="
                 absolute left-1 top-1 bottom-1
-                w-[calc((100%-4px)/6)]
+                w-[calc((100%-8px)/6)]
                 bg-secondary border-2 border-border
                 shadow-brutal-sm
                 transition-transform duration-300 ease-in-out

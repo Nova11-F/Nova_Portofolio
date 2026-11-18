@@ -16,7 +16,7 @@ export default function About() {
       <Reveal variant="slide-right">
         <SectionHeader number="01" section="about" label="about" />
       </Reveal>
-      <div className="grid grid-cols-1 items-stretch gap-4 xl:grid-cols-2">
+      <div className="grid grid-cols-1 items-stretch gap-4 lg:grid-cols-2">
         <Reveal variant="slide-right" delay={0.1}>
           <Card
             shadow="soft"
