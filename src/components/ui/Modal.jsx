@@ -1,4 +1,6 @@
+
 import { useEffect } from "react";
+import { motion, AnimatePresence } from "motion/react";
 
 export default function Modal({
   children,
@@ -26,17 +28,30 @@ export default function Modal({
   }, [onClose]);
 
   return (
-    <div
-      className="fixed inset-0 z-100 flex items-center justify-center bg-black/60 p-4"
-      onClick={onClose}
-    >
-      <div
-        className={`relative w-full ${variants[variant]} ${className}`}
-        onClick={(e) => e.stopPropagation()}
-        {...props}
+    <AnimatePresence>
+      <motion.div
+        className="fixed inset-0 z-100 flex items-center justify-center bg-black/60 p-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        onClick={onClose}
       >
-        {children}
-      </div>
-    </div>
+        <motion.div
+          className={`relative w-full ${variants[variant]} ${className}`}
+          initial={{ opacity: 0, scale: 0.95, y: 15 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.95, y: 15 }}
+          transition={{
+            duration: 0.3,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+          onClick={(e) => e.stopPropagation()}
+          {...props}
+        >
+          {children}
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
   );
 }

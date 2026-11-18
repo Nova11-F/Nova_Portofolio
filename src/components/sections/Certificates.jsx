@@ -6,6 +6,7 @@ import { BadgeCheck, Certificate, X, ExternalLink, Download } from "lucide-react
 import certificates from "../../data/certificates";
 import Modal from "../ui/Modal";
 import { useState } from "react";
+import Reveal from "../Reveal";
 
 export default function Certificates() {
   const { t } = useLanguage();
@@ -16,24 +17,31 @@ export default function Certificates() {
       id="certificates"
       className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-6 px-4 xl:px-10 md:max-w-full bg-bg py-6 xl:py-10 scroll-mt-[80px] xl:scroll-mt-[90px]"
     >
+      <Reveal variant="slide-right">
       <SectionHeader number="05" section="certificates" label="certificates" />
-      <p className="text-xs font-medium text-muted font-Grotesk text-center tracking-wider mx-auto xl:text-lg">
+      </Reveal>
+      <Reveal variant="slide-right" delay={0.3}>
+      <p className="text-xs font-medium text-muted font-Grotesk text-center tracking-wider mx-auto xl:text-sm">
         {t("certificates.desc")}
       </p>
+      </Reveal>
+      <Reveal variant="slide-right" delay={0.3}>
       <Card 
       shadow="soft"
       padding="sm"
-      className="flex w-fit self-end items-center justify-end-safe gap-2">
+      className="relative flex w-fit items-center ml-auto  gap-2">
         <span className="bg-secondary rounded-full p-1"></span>
         <p className="text-xs font-bold text-text font-Mono uppercase lg:text-md">
           {t("certificates.active")}
         </p>
       </Card>
+      </Reveal>
       <div className="grid grid-cols-1 gap-4 md:gap-6 lg:grid-cols-2">
-        {certificates.map((certificate) => {
+        {certificates.map((certificate, i) => {
           const Icon = certificate.icon;
 
           return (
+            <Reveal variant="slide-up" delay={i * 0.20}>
             <Card
               key={certificate.id}
               className="flex flex-col gap-2 xl:gap-4 hover:border-secondary hover:translate-[2px] hover:shadow-brutal-none"
@@ -98,6 +106,7 @@ export default function Certificates() {
                 </Button>
               </div>
             </Card>
+            </Reveal>
           );
         })}
       </div>
