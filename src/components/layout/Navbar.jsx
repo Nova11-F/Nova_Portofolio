@@ -1,11 +1,12 @@
 import { useLanguage } from "../../context/LanguageContext";
 import ThemeToggle from "../ui/ThemeToggle";
 import LanguageToggle from "../ui/LanguageToggle";
-import { CodeXml, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Button from "../ui/Button";
 import Card from "../ui/Card";
 import { useState, useEffect } from "react";
 import Reveal from "../Reveal";
+import logo from "../../../public/logo.webp"
 
 const navItems = [
   { id: "about", label: "about" },
@@ -74,16 +75,12 @@ export default function Navbar() {
     >
       <Reveal variant="slide-down" delay={0.1} duration={0.6}>
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 xl:py-6 xl:mx-10 md:max-w-full">
-        <div className="flex items-center justify-center gap-2 xl:gap-4">
-          <Card
-            padding="none"
-            className="flex items-center justify-center shadow-brutal-sm p-1.5 xl:p-2"
-          >
-            <CodeXml
-              strokeWidth={3}
-              className="size-4 xl:size-6 text-secondary"
-            />
-          </Card>
+        <div className="flex items-center justify-center gap-1 xl:gap-2">
+        <img
+        src={logo}
+        alt="logo"
+        loading="lazy"
+        className="h-10 xl:h-15"/>
 
           <span className="font-bold font-mono text-md text-text uppercase">
             Portofolio.Nova
