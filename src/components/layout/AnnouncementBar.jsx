@@ -1,9 +1,15 @@
 import { useLanguage } from "../../context/LanguageContext";
+import Reveal from "../Reveal";
 
 export default function AnnouncementBar() {
   const { t } = useLanguage();
 
   return (
+    <Reveal
+  variant="slide-down"
+  delay={0.2}
+  duration={0.6}
+>
     <div className="bg-primary w-full flex flex-col justify-between items-center py-2 2xl:flex-row xl:py-3 px-4">
       <div className="flex items-center justify-center self-start gap-2 text-sm font-Mono text-text-list">
         <span className="bg-tertiary rounded-full p-1 xl:p-1.5"></span>
@@ -24,5 +30,6 @@ export default function AnnouncementBar() {
         </span>
       </div>
     </div>
+    </Reveal>
   );
 }

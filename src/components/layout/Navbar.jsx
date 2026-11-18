@@ -5,6 +5,7 @@ import { CodeXml, Menu, X } from "lucide-react";
 import Button from "../ui/Button";
 import Card from "../ui/Card";
 import { useState, useEffect } from "react";
+import Reveal from "../Reveal";
 
 const navItems = [
   { id: "about", label: "about" },
@@ -71,6 +72,7 @@ export default function Navbar() {
         ${scrolled ? "bg-surface shadow-brutal-md" : "bg-bg"}
       `}
     >
+      <Reveal variant="slide-down" delay={0.1} duration={0.6}>
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 xl:py-6 xl:mx-10 md:max-w-full">
         <div className="flex items-center justify-center gap-2 xl:gap-4">
           <Card
@@ -174,6 +176,7 @@ export default function Navbar() {
           </Button>
         </div>
       </nav>
+      </Reveal>
 
       <div
         id="mobile-navigation"
