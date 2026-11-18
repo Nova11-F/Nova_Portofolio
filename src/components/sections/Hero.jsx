@@ -4,6 +4,7 @@ import Button from "../ui/Button";
 import { ArrowDown, ChevronRight, Download } from "lucide-react";
 import techStack from "../../data/techStack";
 import poto from "../../assets/images/pp.png";
+import Reveal from "../Reveal";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -18,6 +19,7 @@ export default function Hero() {
     >
       <div className="grid grid-cols-1 items-center gap-6 xl:gap-10 xl:grid-cols-[minmax(0,1fr)_500px]">
         <div className="flex flex-col min-w-0 gap-2 xl:gap-6">
+          <Reveal variant="slide-right" delay={0.1}>
           <Card
             shadow="soft"
             className="w-fit flex items-center justify-around text-xs xl:text-md font-bold text-text font-Mono gap-4 px-2 py-2"
@@ -34,6 +36,8 @@ export default function Hero() {
               <span className="bg-secondary-rev rounded-full border-3 p-0.5 xl:p-1 "></span>
             </div>
           </Card>
+          </Reveal>
+           <Reveal variant="slide-up" delay={0.2}>
           <h3 className="text-3xl xl:text-4xl font-bold text-text font-Mono [word-spacing:4px] leading-normal xl:leading-relaxed xl:max-w-3xl">
             {t("hero.headline_start")}
             <span className="text-white bg-secondary border-br-3 border-border shadow-brutal-md px-2">
@@ -44,10 +48,14 @@ export default function Hero() {
               {t("hero.headline_end")}
             </span>
           </h3>
+          </Reveal>
+            <Reveal variant="slide-up" delay={0.3}>
           <p className="text-[10px] xl:text-sm font-medium text-muted font-Grotesk [word-spacing:4px] leading-normal xl:max-w-4xl">
             {t("hero.description")}
           </p>
+          </Reveal>
           <div className="flex items-center justify-start gap-2 xl:gap-4">
+            <Reveal variant="slide-up" delay={0.3}>
             <Button
               size="none"
               shadow="soft"
@@ -63,6 +71,8 @@ export default function Hero() {
               </span>
               <ArrowDown className="size-4" strokeWidth={3} />
             </Button>
+            </Reveal>
+            <Reveal variant="pop-up" delay={0.4}>
             <Button
               size="none"
               shadow="soft"
@@ -84,9 +94,16 @@ export default function Hero() {
                 strokeWidth={3}
               />
             </Button>
+            </Reveal>
           </div>
         </div>
         <div className="flex items-center justify-center xl:justify-end">
+            <Reveal
+    variant="pop-up"
+    delay={0.3}
+    duration={0.7}
+    className="w-full"
+  >
           <Card
             padding="none"
             shadow="soft"
@@ -188,8 +205,14 @@ export default function Hero() {
               </Card>
             </div>
           </Card>
+          </Reveal>
         </div>
       </div>
+      <Reveal
+  variant="slide-up"
+  delay={0.5}
+  duration={0.6}
+>
       <Card
         size="none"
         variant="none"
@@ -216,6 +239,7 @@ export default function Hero() {
           </p>
         </div>
       </Card>
+      </Reveal>
     </section>
   );
 }
