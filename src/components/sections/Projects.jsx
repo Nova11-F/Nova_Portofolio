@@ -13,7 +13,7 @@ export default function Project() {
   return (
     <section
       id="projects"
-      className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-6 px-4 xl:px-10 md:max-w-full bg-bg py-6 xl:py-10 scroll-mt-[80px] xl:scroll-mt-[90px]"
+      className="flex flex-col mx-auto max-w-5xl gap-4 lg:gap-6 px-4 lg:p-10 md:max-w-full bg-bg py-6 scroll-mt-[70px] lg:scroll-mt-[80px]"
     >
       <Reveal variant="slide-right">
       <SectionHeader number="02" section="project" label="project" />
@@ -21,12 +21,12 @@ export default function Project() {
       <div className="flex flex-col gap-4">
       <Reveal delay={0.2} variant="slide-right">
         <div className="flex items-center justify-center">
-          <h4 className="text-xs font-bold text-text font-Mono text-center max-w-4xl xl:text-md">
+          <h4 className="text-[10px] font-semibold text-text font-Mono text-center tracking-wide max-w-4xl xl:text-sm">
             {t("projects.desc")}
           </h4>
         </div>
       </Reveal>
-        <div className="grid grid-cols-1 gap-4 items-stretch lg:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 items-stretch md:grid-cols-2 xl:grid-cols-3">
           {projects.map((project, i) => {
             
             return (
@@ -36,7 +36,7 @@ export default function Project() {
                 padding="none"
                 className="flex flex-col h-full gap-2"
               >
-                <div className="relative h-60 border-b-3 border-border overflow-hidden">
+                <div className="relative h-40 md:h-45 border-b-3 border-border overflow-hidden">
                   <Card
                     padding="none"
                     shadow="soft"
@@ -60,11 +60,11 @@ export default function Project() {
                 </div>
                 <div className="flex flex-col flex-1 gap-4 pb-4 border-b-3 border-border px-4 xl:px-6">
                   <div className="py-2 flex flex-col gap-2">
-                    <h3 className="text-md font-bold text-text font-Grotesk uppercase xl:text-lg">
+                    <h3 className="text-base font-bold text-text font-Grotesk uppercase xl:text-lg">
                       {project.name}
                     </h3>
 
-                    <p className="text-xs font-medium text-muted font-Grotesk tracking-wider wrap-normal xl:text-sm">
+                    <p className="text-[10px] font-medium text-muted font-Grotesk tracking-wider wrap-normal xl:text-sm">
                       {t(project.desc)}
                     </p>
                   </div>
@@ -78,14 +78,14 @@ export default function Project() {
                           key={item}
                           padding="none"
                           shadow="soft"
-                          className="flex items-center justify-center p-2 gap-2"
+                          className="flex items-center justify-center p-1 md:p-2 gap-1 md:gap-2"
                         >
                           <Icon
-                            className="size-4"
+                            className="size-3 md:size-4"
                             style={{ color: item.color }}
                           />
 
-                          <p className="text-[10px] font-bold text-text font-Mono uppercase">
+                          <p className="text-[10px] font-bold text-text font-Mono text-center uppercase">
                             {item.name}
                           </p>
                         </Card>
@@ -127,18 +127,18 @@ export default function Project() {
         <Card
           shadow="soft"
           padding="none"
-          className="flex flex-col items-center justify-between px-2 py-4 gap-2 xl:flex-row"
+          className="flex flex-col items-center justify-between px-2 py-4 gap-2 md:flex-row"
         >
-          <div className="flex items-center justify-start gap-4">
+          <div className="flex items-center justify-start gap-2">
             <Card
               padding="none"
               shadow="soft"
-              className="px-3 py-2 xl:px-4 xl:py-2"
+              className="px-3 py-2"
             >
               <FolderOpen className="size-4 text-yellow-900 fill-amber-500 xl:size-6" />
             </Card>
             <div className="flex flex-col gap-0.5 xl:gap-1">
-              <h4 className="text-sm xl:text-md font-bold text-text font-Mono xl:tracking-wide">
+              <h4 className="text-sm xl:text-base font-bold text-text font-Mono xl:tracking-wide">
                 {t("projects.moreProjects")}
               </h4>
               <p className="text-[10px] xl:text-xs font-medium text-muted font-Grotesk">
@@ -149,7 +149,7 @@ export default function Project() {
           <Button
             shadow="soft"
             size="none"
-            className="flex items-center justify-center text-[10px] w-full py-1.5 gap-2 xl:w-fit xl:text-sm xl:px-4 xl:py-1.5"
+            className="flex items-center justify-center text-[10px] w-full py-1.5 gap-2 md:w-fit xl:text-sm md:px-4 md:py-1.5"
             onClick={() =>
               window.open(
                 "https://github.com/Nova11-F",

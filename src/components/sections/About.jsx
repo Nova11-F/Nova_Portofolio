@@ -11,7 +11,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col mx-auto max-w-5xl gap-4 lg:gap-6 px-4 lg:p-10 md:max-w-full bg-bg py-6 scroll-mt-[70px] md:scroll-mt-[90px]"
+      className="flex flex-col mx-auto max-w-5xl gap-4 lg:gap-6 px-4 lg:p-10 md:max-w-full bg-bg py-6 scroll-mt-[70px] lg:scroll-mt-[80px]"
     >
       <Reveal variant="slide-right">
         <SectionHeader number="01" section="about" label="about" />
