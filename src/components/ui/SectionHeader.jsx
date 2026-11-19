@@ -34,7 +34,7 @@ export default function SectionHeader({
         </p>
       </Card>
 
-      <h2 className="text-sm font-bold font-mono text-text md:text-lg lg:text-xl">
+      <h2 className="text-sm font-bold font-mono text-text tracking-tight md:tracking-wide md:text-lg lg:text-xl">
         {t(`sectionHeader.${section}`)}
       </h2>
     </div>
