@@ -15,13 +15,13 @@ export default function Certificates() {
   return (
     <section
       id="certificates"
-      className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-6 px-4 xl:px-10 md:max-w-full bg-bg py-6 xl:py-10 scroll-mt-[80px] xl:scroll-mt-[90px]"
+      className="flex flex-col mx-auto max-w-5xl gap-4 lg:gap-6 px-4 lg:p-10 md:max-w-full bg-bg py-6 scroll-mt-[70px] lg:scroll-mt-[80px]"
     >
       <Reveal variant="slide-right">
       <SectionHeader number="05" section="certificates" label="certificates" />
       </Reveal>
       <Reveal variant="slide-right" delay={0.3}>
-      <p className="text-xs font-medium text-muted font-Grotesk text-center tracking-wider mx-auto xl:text-sm">
+      <p className="text-[10px] font-medium text-muted font-Grotesk text-center tracking-wider mx-auto md:text-xs xl:text-sm">
         {t("certificates.desc")}
       </p>
       </Reveal>
@@ -31,12 +31,12 @@ export default function Certificates() {
       padding="sm"
       className="relative flex w-fit items-center ml-auto  gap-2">
         <span className="bg-secondary rounded-full p-1"></span>
-        <p className="text-xs font-bold text-text font-Mono uppercase lg:text-md">
+        <p className="text-[10px] font-bold text-text font-Mono uppercase lg:text-xs">
           {t("certificates.active")}
         </p>
       </Card>
       </Reveal>
-      <div className="grid grid-cols-1 gap-4 md:gap-6 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-2 md:gap-4 md:grid-cols-2">
         {certificates.map((certificate, i) => {
           const Icon = certificate.icon;
 
@@ -44,7 +44,7 @@ export default function Certificates() {
             <Reveal variant="slide-up" delay={i * 0.20}>
             <Card
               key={certificate.id}
-              className="flex flex-col gap-2 xl:gap-4 hover:border-secondary hover:translate-[2px] hover:shadow-brutal-none"
+              className="flex flex-col gap-2 h-full xl:gap-4 hover:border-secondary hover:translate-[2px] hover:shadow-brutal-none"
             >
               <div className="flex items-center justify-between">
                 <Card
@@ -52,7 +52,7 @@ export default function Certificates() {
                   className="flex items-center justify-center px-2"
                   shadow="soft"
                 >
-                  <p className="text-xs font-semibold text-text font-Grotesk uppercase xl:text-md">
+                  <p className="text-[10px] font-semibold text-text font-Grotesk uppercase lg:text-xs">
                     {certificate.type}
                   </p>
                 </Card>
@@ -60,20 +60,20 @@ export default function Certificates() {
                 shadow="soft"
                   padding="sm"
                   variant="secondary_rev"
-                  className="flex items-center justify-center px-4 gap-2 lg:px-6"
+                  className="flex items-center justify-center px-4 gap-2 "
                 >
                   <BadgeCheck className="size-4 xl:size-6" strokeWidth={3} />
-                  <p className="text-xs font-bold font-Mono uppercase xl:text-md">
+                  <p className="text-[10px] font-bold font-Mono uppercase lg:text-xs">
                     {t("certificates.verified")}
                   </p>
                 </Card>
               </div>
-              <div className="relative h-60 md:h-80 border-4 border-border overflow-hidden">
+              <div className="relative h-40 lg:h-60 border-4 border-border overflow-hidden">
                 <img
                   src={certificate.img}
                   alt={certificate.title_certificate}
                   loading="lazy"
-                  className="object-center"
+                  className="object-contain"
                 />
               </div>
               <div className="flex items-center justify-start gap-4 border-b-4 border-border pb-4">
@@ -84,24 +84,25 @@ export default function Certificates() {
                   <Icon className="size-4 xl:size-6 text-muted " />
                 </Card>
                 <div className="flex flex-col xl:gap-0.5">
-                  <h5 className="text-sm font-bold text-text font-Mono xl:text-md">
+                  <h5 className="text-xs font-bold text-text font-Mono lg:text-sm">
                     {certificate.title_certificate}
                   </h5>
-                  <p className="text-xs font-semibold text-muted font-Mono xl:text-sm">
+                  <p className="text-[10px] font-semibold text-muted font-Mono lg:text-xs">
                     {certificate.provider}
                   </p>
                 </div>
               </div>
-              <div className="flex items-center justify-between">
-                <p className="text-xs font-medium text-muted font-Grotesk uppercase xl:text-sm">
+              <div className="flex items-center justify-end md:justify-between">
+                <p className="hidden md:block text-xs font-medium text-muted font-Grotesk uppercase xl:text-sm">
                   {t("certificates.official_document")}
                 </p>
                 <Button
+                size="none"
                   onClick={() => setSelectedCertificate(certificate)}
                   shadow="soft"
-                  className="flex items-center justify-center gap-2"
+                  className="flex items-center justify-center gap-2 px-3 py-2"
                 >
-                  <p className=" text-xs uppercase xl:text-sm">{t("certificates.view")}</p>
+                  <p className=" text-[10px] uppercase lg:text-xs">{t("certificates.view")}</p>
                   <Certificate className="size-4 xl:size-6" strokeWidth={3} />
                 </Button>
               </div>
@@ -125,11 +126,11 @@ export default function Certificates() {
             <div>
               <h3
                 id="certificate-title"
-                className="text-md font-bold text-text font-Mono xl:text-lg"
+                className="text-sm font-bold text-text font-Mono lg:text-base"
               >
                 {selectedCertificate.title_certificate}
               </h3>
-              <p className="text-xs font-semibold text-muted font-Grotesk xl:text-sm">
+              <p className="text-xs font-semibold text-muted font-Grotesk lg:text-sm">
                 {selectedCertificate.provider}
               </p>
             </div>
@@ -142,39 +143,41 @@ export default function Certificates() {
               aria-label="Close modal"
               className="bg-surface group p-2 hover:bg-red-500"
             >
-              <X strokeWidth={3} className="size-4 xl:size-6 text-text group-hover:text-white"/>
+              <X strokeWidth={3} className="size-4 text-text group-hover:text-white"/>
             </Button>
           </div>
 
-          <div className="border-3 border-border shadow-brutal-sm">
+          <div className="flex items-center justify-center border-3 border-border shadow-brutal-sm">
             <img
               src={selectedCertificate.img}
               alt={selectedCertificate.title_certificate}
-              className="w-full max-h-[65vh] object-contain"
+              className="w-fit max-h-[65vh] object-contain"
             />
           </div>
 
-          <div className="flex justify-end gap-3 mt-3 xl:mt-6">
+          <div className="flex justify-end gap-2 mt-3 xl:mt-6">
             <Button
+            shadow="soft"
             variant="surface">
             <a
               href={selectedCertificate.img}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center text-xs text-text gap-2 xl:text-md"
+              className="flex items-center text-[10px] tracking-wider text-text gap-1 lg:text-sm"
             >
-              <ExternalLink className="size-4 xl:size-5" />
+              <ExternalLink className="size-4 " strokeWidth={3} />
               {t("certificates.open")}
             </a>
             </Button>
 
-            <Button>
+            <Button
+            shadow="soft">
             <a
               href={selectedCertificate.img}
               download={`${selectedCertificate.title_certificate}.webp`}
-              className="flex items-center text-xs gap-2 xl:text-md"
+              className="flex items-center text-[10px] gap-1 lg:text-sm"
             >
-              <Download className="size-5" />
+              <Download className="size-4" strokeWidth={3} />
               {t("certificates.download")}
             </a>
             </Button>
