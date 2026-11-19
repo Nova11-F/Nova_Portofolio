@@ -13,7 +13,7 @@ export default function SectionHeader({
     <div
       className={`
         flex items-center justify-start
-        pb-4 md:pb-6
+        pb-3 md:pb-4
         border-b-4 border-border
         gap-2 lg:gap-4
         ${className}

@@ -11,12 +11,12 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col mx-auto max-w-5xl gap-4 xl:gap-6 px-4 xl:px-10 md:max-w-full bg-bg py-6 xl:py-10 scroll-mt-[80px] xl:scroll-mt-[90px]"
+      className="flex flex-col mx-auto max-w-5xl gap-4 lg:gap-6 px-4 lg:p-10 md:max-w-full bg-bg py-6 scroll-mt-[70px] md:scroll-mt-[90px]"
     >
       <Reveal variant="slide-right">
         <SectionHeader number="01" section="about" label="about" />
       </Reveal>
-      <div className="grid grid-cols-1 items-stretch gap-4 lg:grid-cols-2">
+      <div className="grid grid-cols-1 items-stretch gap-2 md:grid-cols-2">
         <Reveal variant="slide-right" delay={0.1}>
           <Card
             shadow="soft"
@@ -26,17 +26,17 @@ export default function About() {
               variant="secondary"
               padding="sm"
               shadow="soft"
-              className="text-[10px] font-bold text-white font-Grotesk uppercase tracking-wider w-fit py-2 xl:text-md xl:px-4"
+              className="text-[10px] font-bold text-white font-Grotesk uppercase tracking-wider w-fit py-2 xl:text-sm xl:px-4"
             >
               {t("about.list")}
             </Card>
-            <h4 className="text-lg font-bold text-text font-mono  xl:text-2xl ">
+            <h4 className="text-base font-bold text-text font-mono lg:tracking-wide xl:text-xl ">
               {t("about.title_profile")}
             </h4>
-            <div className="grid grid-cols-2 items-center gap-4 border-b-4 border-border pb-8 md:grid-cols-[minmax(180px,0.8fr)_minmax(0,2fr)] lg:grid-cols-[minmax(220px,1fr)_minmax(0,2fr)] xl:grid-cols-[220px_minmax(0,1fr)] xl:gap-8">
+            <div className="grid grid-cols-1 items-center gap-8 lg:gap-2 xl:gap-4 border-b-4 border-border pb-4 lg:pb-8  lg:grid-cols-[minmax(220px,1fr)_minmax(0,2fr)] xl:grid-cols-[220px_minmax(0,1fr)]">
               <Card
                 padding="sm"
-                className="relative mx-auto flex aspect-square w-full max-w-60 items-center justify-center xl:max-w-none"
+                className="relative mx-auto flex aspect-square w-full max-w-50 items-center justify-center lg:max-w-45 xl:max-w-none"
               >
                 <img
                   src={poto}
@@ -48,9 +48,9 @@ export default function About() {
                   shadow="soft"
                   padding="sm"
                   variant="primary"
-                  className="absolute bottom-0 left-1/2 w-max max-w-[80%] -translate-x-1/2 translate-y-1/2 px-3 py-1"
+                  className="absolute bottom-0 left-1/2 w-max max-w-[80%] -translate-x-1/2 translate-y-1/2 px-2 py-1 xl:px-3"
                 >
-                  <p className="text-center text-xs font-bold text-white font-Mono">
+                  <p className="text-center text-[10px] xl:text-xs font-bold text-white font-Mono">
                     {t("about.name_profile")}
                   </p>
                 </Card>
@@ -62,67 +62,69 @@ export default function About() {
             </div>
             <div className="grid grid-cols-2">
               <div className="flex flex-col items-start justify-start gap-0.5 pt-2">
-                <h5 className="text-xs font-bold text-text font-Grotesk uppercase tracking-wider xl:text-sm">
+                <h5 className="text-xs font-bold text-text font-Grotesk uppercase tracking-wider xl:text-xs">
                   {t("about.ability_title")}
                 </h5>
-                <p className="text-sm font-bold text-primary font-Mono xl:tracking-wider xl:text-md">
+                <p className="text-[10px] font-bold text-primary font-Mono xl:tracking-wider lg:text-xs xl:text-sm">
                   {t("about.ability_desc")}
                 </p>
               </div>
               <div className="flex flex-col items-start justify-start gap-0.5 pt-2">
-                <h5 className="text-xs font-bold text-text font-Grotesk uppercase tracking-wider xl:text-sm">
+                <h5 className="text-xs font-bold text-text font-Grotesk uppercase tracking-wider xl:text-xs">
                   {t("about.education_title")}
                 </h5>
-                <p className="text-sm font-bold text-primary font-Mono xl:tracking-wider xl:text-md">
+                <p className="text-[10px] font-bold text-primary font-Mono xl:tracking-wider lg:text-xs xl:text-sm">
                   {t("about.education_desc")}
                 </p>
               </div>
             </div>
           </Card>
         </Reveal>
-        <div className="grid grid-cols-1 h-full gap-4">
+        <div className="grid grid-cols-1 h-full gap-2">
           <Reveal variant="slide-right" delay={0.1} duration={0.5}>
             <Card
+            padding="none"
               shadow="soft"
-              className="flex flex-col justify-center h-full gap-2 p-2 xl:p-4"
+              className="flex flex-col justify-center h-full gap-1 xl:gap-2 px-3 py-2 lg:px-4 lg:py-3"
             >
               <div className="flex items-center justify-start gap-2">
                 <Code2
                   className="size-4 xl:size-6 text-secondary"
                   strokeWidth={3}
                 />
-                <h4 className="text-md font-bold text-text font-Mono xl:text-lg">
+                <h4 className="text-sm font-bold text-text font-Mono xl:text-base">
                   {t("about.title_dev")}
                 </h4>
               </div>
-              <h5 className="text-sm font-bold text-secondary-rev font-Grotesk xl:text-md">
+              <h5 className="text-xs font-bold text-secondary-rev font-Grotesk xl:text-sm">
                 {t("about.title2_dev")}
               </h5>
-              <p className="text-[10px] font-medium text-muted font-Grotesk tracking-wider xl:text-sm">
+              <p className="text-[10px] font-medium text-muted font-Grotesk tracking-wide xl:text-xs">
                 {t("about.desc_dev")}
               </p>
             </Card>
           </Reveal>
-          <div className="grid grid-cols-2 items-stretch h-full gap-2">
+          <div className="grid grid-cols-1 items-stretch h-full gap-2 lg:grid-cols-2">
             <Reveal variant="slide-up" delay={0.25} duration={0.5}>
               <Card
+              padding="none"
                 shadow="soft"
-                className="flex flex-col justify-center h-full gap-2 p-2 xl:p-4"
+                className="flex flex-col justify-center h-full gap-1 xl:gap-2 px-3 py-2 lg:px-4 lg:py-3"
               >
                 <div className="flex items-center justify-start gap-2">
                   <BriefcaseBusiness
                     className="size-4 xl:size-6 text-secondary"
                     strokeWidth={3}
                   />
-                  <h4 className="text-md font-bold text-text font-Mono xl:text-lg">
+                  <h4 className="text-sm font-bold text-text font-Mono xl:text-base">
                     {t("about.title_profexpe")}
                   </h4>
                 </div>
-                <h5 className="text-sm font-bold text-secondary-rev font-Grotesk xl:text-md">
+                <h5 className="text-xs font-bold text-secondary-rev font-Grotesk xl:text-sm">
                   {t("about.title2_profexpe")}
                 </h5>
-                <div className="flex items-center justify-start gap-2">
-                  <span className="bg-primary rounded-full p-1"></span>
+                <div className="flex items-center justify-start gap-1">
+                  <span className="bg-primary rounded-full p-[3px] "></span>
                   <h6 className="text-[10px] font-semibold text-muted font-Mono tracking-tighter [word-spacing:1px] xl:text-sm">
                     {t("about.name_profexpe")}
                   </h6>
@@ -139,28 +141,29 @@ export default function About() {
             </Reveal>
             <Reveal variant="slide-up" delay={0.4} duration={0.5}>
               <Card
+              padding="none"
                 shadow="soft"
-                className="flex flex-col justify-center h-full gap-2 p-2 xl:p-4"
+                className="flex flex-col justify-center h-full gap-1 xl:gap-2 px-3 py-2 lg:px-4 lg:py-3"
               >
                 <div className="flex items-center justify-start gap-2">
                   <Users
                     className="size-4 xl:size-6 text-secondary"
                     strokeWidth={3}
                   />
-                  <h4 className="text-md font-bold text-text font-Mono xl:text-lg">
+                  <h4 className="text-sm font-bold text-text font-Mono xl:text-base">
                     {t("about.title_orgaexpe")}
                   </h4>
                 </div>
-                <h5 className="text-sm font-bold text-secondary-rev font-Grotesk xl:text-md">
+                <h5 className="text-xs font-bold text-secondary-rev font-Grotesk xl:text-sm">
                   {t("about.title2_orgaexpe")}
                 </h5>
-                <div className="flex items-center justify-start gap-2">
-                  <span className="bg-primary rounded-full p-1"></span>
+                <div className="flex items-center justify-start gap-1">
+                  <span className="bg-primary rounded-full p-[3px]"></span>
                   <h6 className="text-[10px] font-semibold text-muted font-Mono xl:text-sm">
                     {t("about.name_orgaexpe")}
                   </h6>
                 </div>
-                <p className="text-[10px] font-medium text-muted font-Grotesk tracking-tight xl:text-sm">
+                <p className="text-[10px] font-medium text-muted font-Grotesk tracking-tighter xl:text-sm">
                   {t("about.desc_orgaexpe")}
                 </p>
                 <div className="flex items-center justify-center bg-secondary rounded-lg w-fit px-1.5 xl:px-4 py-1 xl:py-1.5 border-3 border-border shadow-brutal-sm">
@@ -175,9 +178,9 @@ export default function About() {
             <Card
               variant="tertiary"
               shadow="soft"
-              className="flex items-center justify-center h-full py-1.5"
+              className=" flex items-center justify-center h-full py-1.5"
             >
-              <q className="text-sm font-bold text-white font-Mono text-center tracking-wide xl:text-md">
+              <q className="text-[10px] font-bold text-white font-Mono text-center tracking-wide xl:text-base">
                 {t("about.quote")}
               </q>
             </Card>
