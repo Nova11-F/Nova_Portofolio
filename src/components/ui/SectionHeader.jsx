@@ -23,18 +23,18 @@ export default function SectionHeader({
         shadow="soft"
         padding="xs"
         variant="tertiary"
-        className="px-4 lg:px-8 w-fit"
+        className="px-2 md:px-3 lg:px-6 w-fit"
       >
-        <p className="text-sm font-bold font-mono text-white uppercase lg:text-md">
+        <p className="text-sm font-bold font-mono text-white uppercase lg:text-base">
           {number}
-          <span className="hidden xl:inline">
+          <span className="hidden md:inline">
             .{" "}
             {t(`sectionLabel.${label}`)}
           </span>
         </p>
       </Card>
 
-      <h2 className="text-lg font-bold font-mono text-text xl:text-2xl">
+      <h2 className="text-sm font-bold font-mono text-text md:text-lg lg:text-xl">
         {t(`sectionHeader.${section}`)}
       </h2>
     </div>

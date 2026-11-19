@@ -73,23 +73,23 @@ export default function Navbar() {
       `}
     >
       <Reveal variant="slide-down" delay={0.1} duration={0.6}>
-      <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 xl:mx-10 md:max-w-full">
-        <div className="flex items-center justify-center gap-1 xl:gap-2">
+      <nav className="mx-auto flex max-w-5xl items-center justify-between px-2 py-4 xl:mx-4 md:max-w-full">
+        <div className="flex items-center justify-center gap-1">
         <img
         src="/logo.webp"
         alt="logo"
         loading="lazy"
-        className="h-10 xl:h-14 object-contain"/>
+        className="h-10 lg:h-12 xl:h-14 object-contain"/>
 
-          <span className="font-bold font-mono text-md text-text uppercase">
-            Portofolio.Nova
+          <span className="font-bold font-mono text-sm md:text-base xl:text-lg text-text uppercase">
+            Nova-11f
           </span>
         </div>
 
         <Card
           padding="none"
           shadow="soft"
-          className="hidden text-sm font-mono px-1 py-0.5 font-bold text-text uppercase xl:flex xl:items-center xl:justify-center xl:text-md"
+          className="hidden text-xs font-mono px-1 py-0.5 font-bold text-text uppercase lg:flex xl:text-sm xl:items-center lg:justify-center "
         >
           <div className="relative grid grid-cols-6">
             <div
@@ -128,13 +128,13 @@ export default function Navbar() {
           </div>
         </Card>
 
-        <div className="flex items-center gap-1 xl:gap-2">
+        <div className="flex items-center gap-1 md:gap-1.5">
           <LanguageToggle />
           <ThemeToggle />
 
           <Button
             size="none"
-            className="hidden text-sm text-text uppercase px-2 py-2.5 xl:block xl:shadow-brutal-sm"
+            className="hidden text-sm text-text uppercase p-2 xl:py-3 lg:block lg:shadow-brutal-sm"
             onClick={() =>
               window.open(
                 "https://drive.google.com/file/d/1JDHnBEI9sVSZHCczJT_NCMdTi5WiHZa-/view?usp=drive_link",
@@ -161,7 +161,7 @@ export default function Navbar() {
             transition-all duration-200
             hover:translate-[2px]
             shadow-brutal-sm 
-            xl:hidden
+            lg:hidden
           "
           >
             {menuOpen ? (

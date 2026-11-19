@@ -27,7 +27,7 @@ export default function ThemeToggle() {
             aria-label={`Switch to ${themeOption} mode`}
             aria-pressed={isActive}
             className={`
-              relative z-10 px-2 py-1.5 xl:px-3 xl:py-2 font-bold font-Mono text-bg cursor-pointer transition-colors duration-200
+              relative z-10 px-2 py-1.5 xl:px-3 xl:py-2.5 font-bold font-Mono text-bg cursor-pointer transition-colors duration-200
               ${isActive ? "" : "text-text"}
             `}
           >
