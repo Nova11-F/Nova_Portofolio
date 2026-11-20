@@ -18,7 +18,7 @@ const socials = {
     {
       id: "linkedin",
       name: "LinkedIn",
-      url: "www.linkedin.com/in/firman-nova-prayoga-052203391",
+      url: "https://www.linkedin.com/in/firman-nova-prayoga-052203391/",
       icon: BsLinkedin,
     },
     {
