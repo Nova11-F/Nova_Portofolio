@@ -1,4 +1,4 @@
-::: {align="center"}
+<div align="center">
 # ✨ NOVA --- PERSONAL PORTFOLIO
 
 ### *Modern Personal Portfolio Website*
@@ -17,7 +17,7 @@ modern, responsif, serta interaktif.
 
 [🌐 **Live Demo**](https://nova11.my.id) · [📂 **GitHub
 Repository**](https://github.com/Nova11-F/Nova_Portofolio)
-:::
+</div>
 
 ------------------------------------------------------------------------
 
@@ -277,7 +277,7 @@ open-source yang ditetapkan. Silakan hubungi pemilik repository sebelum
 menggunakan, menyalin, atau mendistribusikan kembali bagian dari proyek
 ini.
 
-::: {align="center"}
+<div align="center">
 
 ------------------------------------------------------------------------
 
@@ -290,5 +290,4 @@ profil dan hubungi saya melalui tautan berikut.
 Portfolio**](https://nova11.my.id)
 
 *Designed & Developed by Nova11-F*
-:::
-
+</div>
