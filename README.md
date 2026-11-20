@@ -1,5 +1,5 @@
 <div align="center">
-# ✨ NOVA --- PERSONAL PORTFOLIO
+## ✨ NOVA --- PERSONAL PORTFOLIO
 
 ### *Modern Personal Portfolio Website*
 
