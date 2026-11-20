@@ -1,6 +1,6 @@
 <div align="center">
 
-## ✨ NOVA --- PERSONAL PORTFOLIO
+## ✨ NOVA - PERSONAL PORTFOLIO
 
 ### *Modern Personal Portfolio Website*
 
@@ -15,8 +15,7 @@ Website portofolio pribadi yang dirancang untuk menampilkan profil,
 keterampilan, pengalaman, sertifikat, dan proyek melalui antarmuka
 modern, responsif, serta interaktif.
 
-[🌐 **Live Demo**](https://nova11.my.id) · [📂 **GitHub
-Repository**](https://github.com/Nova11-F/Nova_Portofolio)
+[🌐 **Live Demo**](https://nova11.my.id) · [📂 **GitHubRepository**](https://github.com/Nova11-F/Nova_Portofolio)
 </div>
 
 ------------------------------------------------------------------------
